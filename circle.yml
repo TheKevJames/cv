@@ -4,6 +4,7 @@ dependencies:
 
 test:
   override:
+    # resume-cli does not obey the latest schema yet
     - resume test || exit 0
 
 deployment:
@@ -13,7 +14,6 @@ deployment:
       - resume export --format html --theme crisp $CIRCLE_ARTIFACTS/resume-crisp.html
       - resume export --format html --theme flat $CIRCLE_ARTIFACTS/resume-flat.html
       - resume export --format html --theme modern $CIRCLE_ARTIFACTS/resume-modern.html
-      - resume export --format html --theme traditional $CIRCLE_ARTIFACTS/resume-traditional.html
 
       # - resume login
       # - resume publish
