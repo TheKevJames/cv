@@ -4,10 +4,16 @@ dependencies:
 
 test:
   override:
-    - exit 0
+    - resume test | |exit 0
 
 deployment:
   release:
     branch: master
     commands:
-      - resume-cli export --format html --theme flat resume.html
+      - resume export --format html --theme crisp $CIRCLE_ARTIFACTS/resume-crisp.html
+      - resume export --format html --theme flat $CIRCLE_ARTIFACTS/resume-flat.html
+      - resume export --format html --theme modern $CIRCLE_ARTIFACTS/resume-modern.html
+      - resume export --format html --theme traditional $CIRCLE_ARTIFACTS/resume-traditional.html
+
+      # - resume login
+      # - resume publish
