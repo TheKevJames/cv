@@ -4,7 +4,7 @@ dependencies:
 
 test:
   override:
-    - resume test | |exit 0
+    - resume test || exit 0
 
 deployment:
   release:
