@@ -1,0 +1,13 @@
+dependencies:
+  override:
+    - npm install -g resume-cli
+
+test:
+  override:
+    - true
+
+deployment:
+  release:
+    branch: master
+    commands:
+      - resume-cli export --format html --theme flat resume.html
