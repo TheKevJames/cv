@@ -141,8 +141,5 @@
       "language": "Spanish",
       "fluency": "Fluent"
     }
-  ],
-  "meta": {
-    "url": "https://github.com/jsonresume/resume-schema/blob/81458745bf48981ea5f9beb124d2f1378ef56ff1/schema.json"
-  }
+  ]
 }
