@@ -183,7 +183,8 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/784e6ec7f730c3ac4371a2749d625992daf5d456/schema.json",
-    "dateModified": 1485699879
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/f457dea0d706741fcdb5e516feaecdb678f21b44/schema.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-01-29T09:26:00"
   }
 }
