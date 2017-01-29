@@ -39,7 +39,7 @@
   },
   "work": [
     {
-      "company": "TalkIQ",
+      "name": "TalkIQ",
       "companyDescription": "Data Intelligence Platform",
       "position": "Infrastructure Engineer",
       "website": "http://talkiq.com",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "company": "AeroFS",
+      "name": "AeroFS",
       "companyDescription": "File Management and Team Communication Solution",
       "position": "System Developer & Operations Engineer",
       "website": "https://www.aerofs.com",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "company": "TalkIQ",
+      "name": "TalkIQ",
       "companyDescription": "Data Intelligence Platform",
       "position": "Data Scientist & Software Engineer",
       "website": "http://talkiq.com",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "company": "Enflick",
+      "name": "Enflick",
       "companyDescription": "Telecommunications Company",
       "position": "Server Developer",
       "website": "https://www.textnow.com",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "company": "Wriber",
+      "name": "Wriber",
       "companyDescription": "Text Intelligence Tool",
       "position": "Lead Data Engineer",
       "website": "https://www.wriber.com",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "company": "Oracle",
+      "name": "Oracle",
       "companyDescription": "Cloud Application and Platform Service Provider",
       "position": "Software Developer",
       "website": "https://www.oracle.com",
@@ -189,8 +189,8 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/0c2c39a25f66d8ac7169ca5d6821297fefd74d03/schema.json",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/f12074eeea392e6d0ff7639ff564c5947c8983b9/schema.json",
     "version": "v1.0.0",
-    "lastModified": "2017-01-29T09:32:00"
+    "lastModified": "2017-01-29T09:34:00"
   }
 }
