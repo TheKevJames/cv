@@ -2,7 +2,7 @@
   "basics": {
     "name": "Kevin James",
     "label": "Software Developer",
-    "picture": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
+    "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
     "email": "KevinJames@thekev.in",
     "phone": "(650) 686-9458",
     "website": "https://thekev.in",
@@ -189,7 +189,7 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/d1df6c67aea86a8543602967eabfdb0c452dbf2c/schema.json",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/0c2c39a25f66d8ac7169ca5d6821297fefd74d03/schema.json",
     "version": "v1.0.0",
     "lastModified": "2017-01-29T09:32:00"
   }
