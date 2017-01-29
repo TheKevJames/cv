@@ -128,7 +128,8 @@
         "Python", "Slack"
       ],
       "startDate": "2015-09-23",
-      "url": "https://github.com/TheKevJames/jarvis"
+      "url": "https://github.com/TheKevJames/jarvis",
+      "type": "application"
     },
     {
       "name": "league-utils",
@@ -141,7 +142,8 @@
         "Python"
       ],
       "startDate": "2016-04-12",
-      "url": "https://github.com/TheKevJames/league"
+      "url": "https://github.com/TheKevJames/league",
+      "type": "application"
     },
     {
       "name": "puppet-homebrew",
@@ -153,7 +155,8 @@
         "Ruby", "Puppet", "Homebrew"
       ],
       "startDate": "2015-04-28",
-      "url": "https://github.com/TheKevJames/puppet-homebrew"
+      "url": "https://github.com/TheKevJames/puppet-homebrew",
+      "type": "application"
     }
   ],
   "education": [
@@ -189,8 +192,8 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/c9d424acb56bed878d126425e26c5a0ef0ed17d2/schema.json",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/571b4522e977379cb7a24277a5980b7a9ffc3def/schema.json",
     "version": "v1.0.0",
-    "lastModified": "2017-01-29T09:36:00"
+    "lastModified": "2017-01-29T09:39:00"
   }
 }
