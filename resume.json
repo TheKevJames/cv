@@ -119,7 +119,7 @@
   "projects": [
     {
       "name": "jarvis",
-      "summary": "Python Slackbot",
+      "description": "Python Slackbot",
       "highlights": [
         "Fast, asynchronous processing of messages, tasks, and API requests",
         "Simple plugin system with easy message parsing and async tie-ins"
@@ -132,7 +132,7 @@
     },
     {
       "name": "league-utils",
-      "summary": "Collection of League of Legends utilities",
+      "description": "Collection of League of Legends utilities",
       "highlights": [
         "Intelligent itemset generator and installer",
         "Dynamic item value and efficiency API"
@@ -145,7 +145,7 @@
     },
     {
       "name": "puppet-homebrew",
-      "summary": "Puppet provider for Homebrew",
+      "description": "Puppet provider for Homebrew",
       "highlights": [
         "Most feature-rich and highest rated Homebrew provider on Puppet Forge"
       ],
@@ -189,8 +189,8 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/b304f8b57448c812737218599606dc329c5c50c0/schema.json",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/c9d424acb56bed878d126425e26c5a0ef0ed17d2/schema.json",
     "version": "v1.0.0",
-    "lastModified": "2017-01-29T09:35:00"
+    "lastModified": "2017-01-29T09:36:00"
   }
 }
