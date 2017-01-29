@@ -192,8 +192,8 @@
     }
   ],
   "meta": {
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/fb876d084a3f25104641d1bf46a6c75cc8dcf971/schema.json",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/ded5de856718cd9873420ca290d821852582b165/schema.json",
     "version": "v1.0.0",
-    "lastModified": "2017-01-29T09:40:00"
+    "lastModified": "2017-01-29T09:43:00"
   }
 }
