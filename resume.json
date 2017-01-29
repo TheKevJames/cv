@@ -110,6 +110,46 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "jarvis",
+      "summary": "Python Slackbot",
+      "highlights": [
+        "Fast, asynchronous processing of messages, tasks, and API requests",
+        "Simple plugin system with easy message parsing and async tie-ins"
+      ],
+      "tech": [
+        "Python", "Slack"
+      ],
+      "startDate": "2015-09-23",
+      "website": "https://github.com/TheKevJames/jarvis"
+    },
+    {
+      "name": "league-utils",
+      "summary": "Collection of League of Legends utilities",
+      "highlights": [
+        "Intelligent itemset generator and installer",
+        "Dynamic item value and efficiency API"
+      ],
+      "tech": [
+        "Python"
+      ],
+      "startDate": "2016-04-12",
+      "website": "https://github.com/TheKevJames/league"
+    },
+    {
+      "name": "puppet-homebrew",
+      "summary": "Puppet provider for Homebrew",
+      "highlights": [
+        "Most feature-rich and highest rated Homebrew provider on Puppet Forge"
+      ],
+      "tech": [
+        "Ruby", "Puppet", "Homebrew"
+      ],
+      "startDate": "2015-04-28",
+      "website": "https://github.com/TheKevJames/puppet-homebrew"
+    }
+  ],
   "education": [
     {
       "institution": "University of Waterloo",
@@ -141,5 +181,8 @@
       "language": "Spanish",
       "fluency": "Fluent"
     }
-  ]
+  ],
+  "meta": {
+    "url": "https://github.com/jsonresume/resume-schema/blob/9823583b397cb7a9040cbfedebaaa2ce7c0dd382/schema.json"
+  }
 }
