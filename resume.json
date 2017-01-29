@@ -118,7 +118,7 @@
         "Fast, asynchronous processing of messages, tasks, and API requests",
         "Simple plugin system with easy message parsing and async tie-ins"
       ],
-      "tech": [
+      "keywords": [
         "Python", "Slack"
       ],
       "startDate": "2015-09-23",
@@ -131,7 +131,7 @@
         "Intelligent itemset generator and installer",
         "Dynamic item value and efficiency API"
       ],
-      "tech": [
+      "keywords": [
         "Python"
       ],
       "startDate": "2016-04-12",
@@ -143,7 +143,7 @@
       "highlights": [
         "Most feature-rich and highest rated Homebrew provider on Puppet Forge"
       ],
-      "tech": [
+      "keywords": [
         "Ruby", "Puppet", "Homebrew"
       ],
       "startDate": "2015-04-28",
@@ -183,6 +183,6 @@
     }
   ],
   "meta": {
-    "url": "https://github.com/jsonresume/resume-schema/blob/9823583b397cb7a9040cbfedebaaa2ce7c0dd382/schema.json"
+    "url": "https://github.com/jsonresume/resume-schema/blob/b59a4cb8304706c1a09a7c27807ba0a67155b30d/schema.json"
   }
 }
