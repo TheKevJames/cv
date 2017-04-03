@@ -1,9 +1,14 @@
 dependencies:
+  pre:
+    - pip install pre-commit
+
   override:
+    - pre-commit install
     - npm install -g resume-cli
 
 test:
   override:
+    - pre-commit run --all-files
     - resume test
 
 deployment:
