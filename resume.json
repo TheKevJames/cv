@@ -56,7 +56,7 @@
       "position": "System Developer & Operations Engineer",
       "url": "https://www.aerofs.com",
       "startDate": "2016-01-04",
-      "endDate": "2016-04-29",
+      "endDate": "2016-04-30",
       "highlights": [
         "Released file-share SDK and unidirectional drop box app",
         "Implemented full file search across AeroFS product suite",
@@ -84,7 +84,7 @@
       "companyDescription": "Telecommunications Company",
       "position": "Server Developer",
       "url": "https://www.textnow.com",
-      "startDate": "2014-08-01",
+      "startDate": "2014-09-03",
       "endDate": "2014-12-19",
       "highlights": [
         "Implemented an automated machine learning system for spam detection",
@@ -109,7 +109,7 @@
       "companyDescription": "Cloud Application and Platform Service Provider",
       "position": "Software Developer",
       "url": "https://www.oracle.com",
-      "startDate": "2013-03-29",
+      "startDate": "2013-04-29",
       "endDate": "2013-08-30",
       "highlights": [
         "Wrote a streaming JSON-parser which transforms highly nested JSON files into a standard relational database format",
