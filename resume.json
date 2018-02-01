@@ -2,17 +2,17 @@
   "basics": {
     "name": "Kevin James",
     "label": "Software Developer",
-    "picture": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
+    "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
     "email": "KevinJames@thekev.in",
     "phone": "(650) 686-9458",
-    "website": "https://thekev.in",
+    "url": "https://thekev.in",
     "summary": "Kevin James is currently earning his Bachelor of Software Engineering at the University of Waterloo, a 'co-op' degree which requires he work while he gets his degree. This gives him the fantastic opportunity to work at great companies such as TalkIQ, where he is currently building the infrastructure for uncovering insights into phone conversations.",
     "location": {
-      "address": "647 Clayton St",
-      "postalCode": "CA 94117",
-      "city": "San Francisco",
-      "region": "California",
-      "countryCode": "US"
+      "address": "338 King St N",
+      "postalCode": "N2J 2Z2",
+      "city": "Waterloo",
+      "region": "Ontario",
+      "countryCode": "CA"
     },
     "profiles": [
       {
@@ -39,21 +39,24 @@
   },
   "work": [
     {
-      "company": "TalkIQ",
+      "name": "TalkIQ",
+      "companyDescription": "Data Intelligence Platform",
       "position": "Infrastructure Engineer",
-      "website": "http://talkiq.com",
+      "url": "http://talkiq.com",
       "startDate": "2016-08-22",
+      "endDate": "2016-12-16",
       "highlights": [
         "Integrated logging and monitoring systems across disparate systems",
         "Overhauled pipelined services for migration to new cloud provider"
       ]
     },
     {
-      "company": "AeroFS",
+      "name": "AeroFS",
+      "companyDescription": "File Management and Team Communication Solution",
       "position": "System Developer & Operations Engineer",
-      "website": "https://www.aerofs.com",
+      "url": "https://www.aerofs.com",
       "startDate": "2016-01-04",
-      "endDate": "2016-04-29",
+      "endDate": "2016-04-30",
       "highlights": [
         "Released file-share SDK and unidirectional drop box app",
         "Implemented full file search across AeroFS product suite",
@@ -62,9 +65,10 @@
       ]
     },
     {
-      "company": "TalkIQ",
+      "name": "TalkIQ",
+      "companyDescription": "Data Intelligence Platform",
       "position": "Data Scientist & Software Engineer",
-      "website": "http://talkiq.com",
+      "url": "http://talkiq.com",
       "startDate": "2015-04-27",
       "endDate": "2015-08-28",
       "highlights": [
@@ -76,10 +80,11 @@
       ]
     },
     {
-      "company": "Enflick",
+      "name": "Enflick",
+      "companyDescription": "Telecommunications Company",
       "position": "Server Developer",
-      "website": "https://www.textnow.com",
-      "startDate": "2014-08-01",
+      "url": "https://www.textnow.com",
+      "startDate": "2014-09-03",
       "endDate": "2014-12-19",
       "highlights": [
         "Implemented an automated machine learning system for spam detection",
@@ -87,9 +92,10 @@
       ]
     },
     {
-      "company": "Wriber",
+      "name": "Wriber",
+      "companyDescription": "Text Intelligence Tool",
       "position": "Lead Data Engineer",
-      "website": "https://www.wriber.com",
+      "url": "https://www.wriber.com",
       "startDate": "2014-01-06",
       "endDate": "2014-05-02",
       "highlights": [
@@ -99,15 +105,59 @@
       ]
     },
     {
-      "company": "Oracle",
+      "name": "Oracle",
+      "companyDescription": "Cloud Application and Platform Service Provider",
       "position": "Software Developer",
-      "website": "https://www.oracle.com",
-      "startDate": "2013-03-29",
+      "url": "https://www.oracle.com",
+      "startDate": "2013-04-29",
       "endDate": "2013-08-30",
       "highlights": [
         "Wrote a streaming JSON-parser which transforms highly nested JSON files into a standard relational database format",
         "Automated a notoriously difficult installation process"
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "jarvis",
+      "description": "Python Slackbot",
+      "highlights": [
+        "Fast, asynchronous processing of messages, tasks, and API requests",
+        "Simple plugin system with easy message parsing and async tie-ins"
+      ],
+      "keywords": [
+        "Python", "Slack"
+      ],
+      "startDate": "2015-09-23",
+      "url": "https://github.com/TheKevJames/jarvis",
+      "type": "application"
+    },
+    {
+      "name": "league-utils",
+      "description": "Collection of League of Legends utilities",
+      "highlights": [
+        "Intelligent itemset generator and installer",
+        "Dynamic item value and efficiency API"
+      ],
+      "keywords": [
+        "Python"
+      ],
+      "startDate": "2016-04-12",
+      "url": "https://github.com/TheKevJames/league",
+      "type": "application"
+    },
+    {
+      "name": "puppet-homebrew",
+      "description": "Puppet provider for Homebrew",
+      "highlights": [
+        "Most feature-rich and highest rated Homebrew provider on Puppet Forge"
+      ],
+      "keywords": [
+        "Ruby", "Puppet", "Homebrew"
+      ],
+      "startDate": "2015-04-28",
+      "url": "https://github.com/TheKevJames/puppet-homebrew",
+      "type": "application"
     }
   ],
   "education": [
@@ -141,5 +191,10 @@
       "language": "Spanish",
       "fluency": "Fluent"
     }
-  ]
+  ],
+  "meta": {
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/ded5de856718cd9873420ca290d821852582b165/schema.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-01-29T09:56:00"
+  }
 }

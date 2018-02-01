@@ -1,8 +1,7 @@
 # CV
 My C.V., in [jsonresume](https://github.com/jsonresume/resume-schema) format.
 Obeys the schema as last updated on
-[April 27th, 2016](https://github.com/jsonresume/resume-schema/blob/81458745bf48981ea5f9beb124d2f1378ef56ff1/schema.json)
-(except the `meta` field, which the `resume-cli` tool does not yet support).
+[February 19th, 2017](https://github.com/jsonresume/resume-schema/blob/c9cfa95ee9738d6a069e6c1a17a84c1eee7b9c1d/schema.json).
 
 At some point, I'll migrate away from my
 [current resume](http://thekev.in/resource/cv.pdf) to this one -- I love the
