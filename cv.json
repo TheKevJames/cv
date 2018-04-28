@@ -20,7 +20,7 @@
     "website": "https://thekev.in"
   },
   "location": {
-    "address": "2361-2291 Stockton St",
+    "address": "2361-2291 Stockton St, San Francisco, CA, USA. 94133",
     "code": "CA 94117",
     "city": "San Francisco",
     "country": "US",
@@ -138,6 +138,16 @@
         "end": "2017-04-21",
         "url": "https://uwaterloo.ca/",
         "location": "Waterloo, ON"
+      },
+      {
+        "title": "High School Diploma, Honours",
+        "institution": "St. John's-Ravenscourt",
+        "studyType": "Diploma",
+        "start": "2007-09",
+        "end": "2012-06",
+        "url": "https://www.sjr.mb.ca/",
+        "location": "Winnipeg, MB",
+        "private": true
       }
     ]
   },
@@ -161,6 +171,42 @@
       "network": "LinkedIn",
       "user": "Kevin James",
       "url": "https://www.linkedin.com/in/thekevjames"
+    }
+  ],
+  "recognition": [
+    {
+      "category": "award",
+      "title": "President's Scholarship of Distinction",
+      "date": "2012-09",
+      "from": "University of Waterloo",
+      "url": "https://uwaterloo.ca/",
+      "private": true
+    },
+    {
+      "category": "award",
+      "title": "Software Engineering Entrance Scholarship",
+      "date": "2012-09",
+      "from": "University of Waterloo",
+      "url": "https://uwaterloo.ca/",
+      "private": true
+    },
+    {
+      "category": "award",
+      "title": "AP Scholar with Distinction",
+      "date": "2012-06",
+      "from": "College Board",
+      "summary": "Granted to students who receive an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more of these exams",
+      "url": "https://collegeboard.org/",
+      "private": true
+    },
+    {
+      "category": "award",
+      "title": "National AP Scholar (Canada)",
+      "date": "2012-06",
+      "from": "College Board",
+      "summary": "Granted to students in Canada who receive an average score of at least 4 on all AP Exams taken, and scores of 4 or higher on five or more of these exams",
+      "url": "https://collegeboard.org/",
+      "private": true
     }
   ],
   "languages": [
