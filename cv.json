@@ -1,0 +1,171 @@
+{
+  "name": "Kevin James",
+  "meta": {
+    "format": "FRESH@^1.0.0-beta"
+  },
+  "info": {
+    "label": "Software Developer",
+    "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png"
+  },
+  "disposition": {
+    "travel": 25,
+    "authorization": "work visa",
+    "commitment": "permanent",
+    "remote": true,
+    "relocation": false
+  },
+  "contact": {
+    "email": "KevinJames@thekev.in",
+    "phone": "(650) 686-9458",
+    "website": "https://thekev.in"
+  },
+  "location": {
+    "address": "2361-2291 Stockton St",
+    "code": "CA 94117",
+    "city": "San Francisco",
+    "country": "US",
+    "region": "California"
+  },
+  "employment": {
+    "history": [
+      {
+        "employer": "TalkIQ",
+        "position": "Infrastructure Engineer",
+        "url": "https://talkiq.com",
+        "start": "2017-08-01",
+        "highlights": [],
+        "location": "San Francisco"
+      },
+      {
+        "employer": "TalkIQ",
+        "position": "Infrastructure Engineer",
+        "url": "https://talkiq.com",
+        "start": "2016-08-22",
+        "end": "2016-12-16",
+        "highlights": [
+          "Integrated logging and monitoring systems across disparate systems",
+          "Overhauled pipelined services for migration to new cloud provider"
+        ],
+        "location": "San Francisco"
+      },
+      {
+        "employer": "AeroFS",
+        "position": "System Developer & Operations Engineer",
+        "url": "https://www.aerofs.com",
+        "start": "2016-01-04",
+        "end": "2016-04-29",
+        "highlights": [
+          "Released file-share SDK and unidirectional drop box app",
+          "Implemented full file search across AeroFS product suite",
+          "Optimized system build and packaging process for continuous delivery and failure recovery",
+          "Integrated user notifications with OSX notification center"
+        ],
+        "location": "Palo Alto"
+      },
+      {
+        "employer": "TalkIQ",
+        "position": "Data Scientist & Software Engineer",
+        "url": "https://talkiq.com",
+        "start": "2015-04-27",
+        "end": "2015-08-28",
+        "highlights": [
+          "Worked to improve Word Error Rate of speech transcription systems",
+          "Developed core customer insight visualizations and dashboards",
+          "Refined database queries and performed overhauls to significantly improve overall throughput",
+          "Researched automated question-detection and objection tracking",
+          "Streamlined development practices for continuous integration"
+        ],
+        "location": "San Francisco"
+      },
+      {
+        "employer": "Enflick",
+        "position": "Server Developer",
+        "url": "https://www.textnow.com",
+        "start": "2014-08-01",
+        "end": "2014-12-19",
+        "highlights": [
+          "Implemented an automated machine learning system for spam detection",
+          "Optimized system to handle millions of concurrent users"
+        ],
+        "location": "Waterloo, ON"
+      },
+      {
+        "employer": "Wriber",
+        "position": "Lead Data Engineer",
+        "url": "https://www.wriber.com",
+        "start": "2014-01-06",
+        "end": "2014-05-02",
+        "highlights": [
+          "Created a natural language processing system which provided insights to help writers expand their work",
+          "Designed a machine learning system capable of learning to rank, regression analysis, and unbounded classification",
+          "Developed algorithms to sort, categorize, and rank the quality of related content and our own insights"
+        ],
+        "location": "Waterloo, ON"
+      },
+      {
+        "employer": "Oracle",
+        "position": "Software Developer",
+        "url": "https://www.oracle.com",
+        "start": "2013-03-29",
+        "end": "2013-08-30",
+        "highlights": [
+          "Wrote a streaming JSON-parser which transforms highly nested JSON files into a standard relational database format",
+          "Automated a notoriously difficult installation process"
+        ],
+        "location": "Cambridge"
+      }
+    ]
+  },
+  "education": {
+    "level": "degree",
+    "degree": "Bachelor of Software Engineering, Honours",
+    "history": [
+      {
+        "title": "Bachelor of Software Engineering, Honours",
+        "institution": "University of Waterloo",
+        "area": "Engineering",
+        "studyType": "Bachelor",
+        "start": "2012-09-03",
+        "end": "2017-04-21",
+        "url": "https://uwaterloo.ca/",
+        "location": "Waterloo, ON"
+      }
+    ]
+  },
+  "social": [
+    {
+      "network": "Github",
+      "user": "TheKevJames",
+      "url": "https://github.com/TheKevJames"
+    },
+    {
+      "network": "Twitter",
+      "user": "TheKevJ",
+      "url": "https://twitter.com/TheKevJ"
+    },
+    {
+      "network": "Facebook",
+      "user": "TheKevJames",
+      "url": "https://www.facebook.com/TheKevJames"
+    },
+    {
+      "network": "LinkedIn",
+      "user": "Kevin James",
+      "url": "https://www.linkedin.com/in/thekevjames"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Fluent"
+    }
+  ]
+}

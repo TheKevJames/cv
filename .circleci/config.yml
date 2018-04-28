@@ -1,0 +1,17 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: koppor/texlive
+    steps:
+      - checkout
+      - run: npm install hackmyresume -g
+      - run: hackmyresume build cv.json to build/cv.latex -o options.json
+      - run: xelatex build/cv.latex
+
+workflows:
+  version: 2
+  run-jobs:
+    jobs:
+      - build
