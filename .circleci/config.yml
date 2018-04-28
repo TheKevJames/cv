@@ -1,30 +1,69 @@
 version: 2
 
 jobs:
-  build:
+  build-tex:
     docker:
-      - image: koppor/texlive
+      - image: circleci/node
+    steps:
+      - checkout
+      - run: npm install hackmyresume
+      - run: node_modules/.bin/hackmyresume build cv.json to build/cv.all -o options.json
+      - run:
+          name: clean latex build dir
+          command: |
+            mv build/latex/examples/cv* build/latex
+            rm build/latex/.npmignore
+            rm build/latex/Makefile
+            rm build/latex/README.md
+      - persist_to_workspace:
+          root: build
+          paths:
+            - cv.json
+            - cv.yml
+            - latex/
+
+  build-pdf:
+    docker:
+      - image: jpbernius/xelatex
+    steps:
+      - attach_workspace:
+          at: build
+      - run:
+          name: xelatex build/latex/cv.tex
+          command: |
+            cd build/latex
+            xelatex cv.tex
+            mv cv.pdf ../
+      - persist_to_workspace:
+          root: build
+          paths:
+            - cv.pdf
+
+  upload:
+    docker:
+      - image: google/cloud-sdk
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /gcloud-service-key.json
     steps:
       - run:
-          name: install dependencies
+          name: authenticate with google cloud
           command: |
-            apt-get update
-            apt-get install -y curl
-            curl -sL https://deb.nodesource.com/setup_9.x | bash
-            apt-get install -y nodejs
-      - checkout
-      - run: npm install hackmyresume -g
-      - run: hackmyresume build cv.json to build/cv.all -o options.json
-      - run:
-          name: xelatex build/latex/examples/cv.tex
-          command: |
-            cd build/latex/examples
-            xelatex cv.tex
-      - store_artifacts:
-          path: build/latex/examples/cv.pdf
+            echo "${GCLOUD_SERVICE_KEY}" > "${GOOGLE_APPLICATION_CREDENTIALS}"
+            gcloud auth activate-service-account --key-file="${GOOGLE_APPLICATION_CREDENTIALS}"
+            gcloud config set project "thekevjames-175823"
+      - attach_workspace:
+          at: build
+      - run: gsutil -m cp build/cv.* gs://thekevjames-cv
 
 workflows:
   version: 2
   run-jobs:
     jobs:
-      - build
+      - build-tex
+      - build-pdf:
+          requires:
+            - build-tex
+      - upload:
+          requires:
+            - build-tex
+            - build-pdf

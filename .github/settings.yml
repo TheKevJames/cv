@@ -1,7 +1,7 @@
 repository:
   name: cv
   description: My C.V. as code
-  homepage: https://circleci.com/api/v1/project/TheKevJames/cv/latest/artifacts/0/$CIRCLE_ARTIFACTS/resume-elegant.html?branch=master&filter=successful
+  homepage: https://thekev.in/cv
   private: false
 
   has_issues: true
