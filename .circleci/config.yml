@@ -5,10 +5,23 @@ jobs:
     docker:
       - image: koppor/texlive
     steps:
+      - run:
+          name: install dependencies
+          command: |
+            apt-get update
+            apt-get install -y curl
+            curl -sL https://deb.nodesource.com/setup_9.x | bash
+            apt-get install -y nodejs
       - checkout
       - run: npm install hackmyresume -g
-      - run: hackmyresume build cv.json to build/cv.latex -o options.json
-      - run: xelatex build/cv.latex
+      - run: hackmyresume build cv.json to build/cv.all -o options.json
+      - run:
+          name: xelatex build/latex/examples/cv.tex
+          command: |
+            cd build/latex/examples
+            xelatex cv.tex
+      - store_artifacts:
+          path: build/latex/examples/cv.pdf
 
 workflows:
   version: 2
