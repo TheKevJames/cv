@@ -55,7 +55,7 @@ jobs:
             gcloud config set project "thekevjames-175823"
       - attach_workspace:
           at: build
-      - run: gsutil -m cp build/cv.* gs://thekevjames-cv
+      - run: gsutil -m cp build/cv.* gs://thekevjames-artifacts
 
 workflows:
   version: 2
