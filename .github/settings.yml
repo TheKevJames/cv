@@ -1,14 +1,15 @@
 repository:
   name: cv
-  description: My C.V. as code
+  description: my CV as code
   homepage: https://thekev.in/cv
   private: false
 
   has_issues: true
   has_projects: false
   has_wiki: false
+  has_downloads: false
 
-  allow_merge_commit: true
+  allow_merge_commit: false
   allow_rebase_merge: true
   allow_squash_merge: true
 
