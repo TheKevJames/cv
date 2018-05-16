@@ -4,7 +4,7 @@
     "format": "FRESH@^1.0.0-beta"
   },
   "info": {
-    "label": "Software Developer",
+    "label": "Software Engineer Team Lead",
     "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png"
   },
   "disposition": {
@@ -29,10 +29,19 @@
   "employment": {
     "history": [
       {
+        "employer": "Dialpad",
+        "position": "Software Engineer Team Lead (VoiceAI)",
+        "url": "https://dialpad.com",
+        "start": "2018-05-16",
+        "highlights": [],
+        "location": "San Francisco"
+      },
+      {
         "employer": "TalkIQ",
         "position": "Infrastructure Engineer",
         "url": "https://talkiq.com",
         "start": "2017-08-01",
+        "end": "2018-05-16",
         "highlights": [],
         "location": "San Francisco"
       },
