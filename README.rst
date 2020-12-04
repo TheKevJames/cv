@@ -1,6 +1,6 @@
 CV
 ==
 
-My C.V., in `FRESH`_ format.
+My C.V., in `jsonresume`_ format.
 
-.. _FRESH: https://github.com/fresh-standard/fresh-resume-schema
+.. _jsonresume: https://jsonresume.org/
