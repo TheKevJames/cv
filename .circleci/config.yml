@@ -8,7 +8,7 @@ jobs:
     docker:
       - image: node:15-alpine
     steps:
-      - apk add -U make
+      - run: apk add -U make
       - checkout
       - run: npm install
       - run: make test
