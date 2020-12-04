@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "jsonresume-theme-direct": "^0.1.0",
+    "jsonresume-theme-elegant": "^1.0.0",
+    "jsonresume-theme-eloquent": "^4.0.0",
+    "jsonresume-theme-flat": "^0.3.0",
+    "jsonresume-theme-fresh": "^0.0.3",
+    "jsonresume-theme-slick": "^0.1.0",
+    "jsonresume-theme-spartacus-prime": "^1.0.0",
+    "resume-cli": "^3.0.0"
+  }
+}

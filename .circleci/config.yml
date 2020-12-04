@@ -1,48 +1,24 @@
 version: 2.1
 
 orbs:
-  linter: thekevjames/linter@0
+  linter: thekevjames/linter@1
 
 jobs:
-  build-tex:
+  build:
     docker:
       - image: circleci/node
     steps:
+      - run: apk add -U make
       - checkout
-      - run: npm install hackmyresume
-      - run: node_modules/.bin/hackmyresume build cv.json to build/cv.all -o options.json
-      - run:
-          name: clean latex build dir
-          command: |
-            mv build/latex/examples/cv* build/latex
-            rm build/latex/.npmignore
-            rm build/latex/Makefile
-            rm build/latex/README.md
-      - persist_to_workspace:
-          root: build
-          paths:
-            - cv.json
-            - cv.yml
-            - latex/
-
-  build-pdf:
-    docker:
-      - image: jpbernius/xelatex
-    steps:
-      - attach_workspace:
-          at: build
-      - run:
-          name: xelatex build/latex/cv.tex
-          command: |
-            cd build/latex
-            xelatex cv.tex
-            mv cv.pdf ../
-      - persist_to_workspace:
-          root: build
-          paths:
-            - cv.pdf
+      - run: npm install
+      - run: make test
+      - run: make
+      # - persist_to_workspace:
+      #     root: build
+      #     paths:
+      #       - cv.pdf
       - store_artifacts:
-          path: build/cv.pdf
+          path: build/cv.*
 
   upload:
     docker:
@@ -64,15 +40,11 @@ workflows:
   run-jobs:
     jobs:
       - linter/pre-commit:
-          python_version: 3.7.4
-      - build-tex
-      - build-pdf:
-          requires:
-            - build-tex
-      - upload:
-          filters:
-            branches:
-              only: master
-          requires:
-            - build-tex
-            - build-pdf
+          python_version: 3.7.9
+      - build
+      # - upload:
+      #     filters:
+      #       branches:
+      #         only: master
+      #     requires:
+      #       - build
