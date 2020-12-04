@@ -6,8 +6,9 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/node
+      - image: node:15-alpine
     steps:
+      - apk add -U make
       - checkout
       - run: npm install
       - run: make test
