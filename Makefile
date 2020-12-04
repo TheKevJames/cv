@@ -9,8 +9,11 @@ all: $(OBJS)
 test: $(RESUMECLI)
 	$< test
 
-build/cv.%.html: $(RESUMECLI)
+build:
+	mkdir -p $@
+
+build/cv.%.html: $(RESUMECLI) build
 	$< export --format=html --theme=$* $@
 
-build/cv.%.pdf: $(RESUMECLI)
+build/cv.%.pdf: $(RESUMECLI) build
 	$< export --format=pdf --theme=$* $@
