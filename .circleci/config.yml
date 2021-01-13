@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: apk add -U make
       - checkout
-      - run: npm install
+      - run: npm ci
       - run: make test
       - run: make
       # - persist_to_workspace:
