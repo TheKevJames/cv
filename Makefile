@@ -1,5 +1,5 @@
 THEMES := direct elegant eloquent flat fresh slick spartacus-prime
-RESUMECLI := node_modules/resume-cli/index.js
+RESUMECLI := node_modules/resume-cli/build/main.js
 
 OBJS = $(patsubst %, build/cv.%.html, $(THEMES))
 # OBJS = $(patsubst %, build/cv.%.html, $(THEMES)) $(patsubst %, build/cv.%.pdf, $(THEMES))
@@ -7,7 +7,7 @@ OBJS = $(patsubst %, build/cv.%.html, $(THEMES))
 all: $(OBJS)
 
 test: $(RESUMECLI)
-	$< test
+	$< validate
 
 build:
 	mkdir -p $@
