@@ -18,7 +18,7 @@ jobs:
       #     paths:
       #       - cv.pdf
       - store_artifacts:
-          path: build/cv.*
+          path: ./build
 
   upload:
     docker:
