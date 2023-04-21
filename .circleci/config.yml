@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: node:19-alpine
+      - image: node:20-alpine
     steps:
       - run: apk add -U make
       - checkout
