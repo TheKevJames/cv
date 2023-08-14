@@ -106,7 +106,7 @@ section {
     margin: 20px 20px
 }
 
-.position, .name, .institution {
+.position, .name, .institution, .title {
     font-weight: bold;
 }
 

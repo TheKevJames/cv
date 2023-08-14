@@ -215,30 +215,6 @@
                                                 {{institution}}
                                             </div>
                                         {{/if}}
-                                        <div class="description col-xs-8">
-                                            {{#if studyType}}
-                                                <span class="studyType">
-                                                    {{studyType}}
-                                                </span>
-                                            {{/if}}
-                                            {{#if area}}
-                                                <span class="area">
-                                                    {{area}}
-                                                </span>
-                                            {{/if}}
-                                        </div>
-                                        {{#if gpa}}
-                                            <div class="gpa">
-                                                GPA: {{gpa}}
-                                            </div>
-                                        {{/if}}
-                                        {{#if courses.length}}
-                                            <ul class="courses">
-                                                {{#each courses}}
-                                                    <li>{{.}}</li>
-                                                {{/each}}
-                                            </ul>
-                                        {{/if}}
                                     </div>
                                     <div class="col-xs-4">
                                         <div class="date">
@@ -258,8 +234,34 @@
                                             {{/if}}
                                         </div>
                                     </div>
+                                    <div class="description col-xs-8">
+                                        {{#if studyType}}
+                                            <span class="studyType">
+                                                {{studyType}}
+                                            </span>
+                                        {{/if}}
+                                        {{#if area}}
+                                            <span class="area">
+                                                {{area}}
+                                            </span>
+                                        {{/if}}
+                                    </div>
                                 </div>
 
+                                <div class="row">
+                                    {{#if gpa}}
+                                        <div class="gpa">
+                                            GPA: {{gpa}}
+                                        </div>
+                                    {{/if}}
+                                    {{#if courses.length}}
+                                        <ul class="courses">
+                                            {{#each courses}}
+                                                <li>{{.}}</li>
+                                            {{/each}}
+                                        </ul>
+                                    {{/if}}
+                                </div>
                             </div>
                         {{/each}}
                     </section>
@@ -319,26 +321,39 @@
                         <h2>Awards</h2>
                         {{#each resume.awards}}
                             <div class="item">
-                                {{#if title}}
-                                    <div class="title">
-                                        {{title}}
+                                <div class="row">
+                                    <div class="description col-xs-8">
+                                        {{#if title}}
+                                            <span class="title">
+                                                {{title}}
+                                            </span>
+                                        {{/if}}
                                     </div>
-                                {{/if}}
-                                {{#if date}}
-                                    <div class="date">
-                                        {{date}}
+                                    <div class="description col-xs-4">
+                                        {{#if date}}
+                                            <div class="date">
+                                                {{date}}
+                                            </div>
+                                        {{/if}}
                                     </div>
-                                {{/if}}
-                                {{#if awarder}}
-                                    <div class="awarder">
-                                        {{awarder}}
+                                </div>
+
+                                <div class="row">
+                                    <div class="infos col-xs-12">
+                                        <div class="description">
+                                            {{#if awarder}}
+                                                <div class="awarder">
+                                                    {{awarder}}
+                                                </div>
+                                            {{/if}}
+                                            {{#if summary}}
+                                                <div class="summary">
+                                                    <p>{{summary}}</p>
+                                                </div>
+                                            {{/if}}
+                                        </div>
                                     </div>
-                                {{/if}}
-                                {{#if summary}}
-                                    <div class="summary">
-                                        <p>{{summary}}</p>
-                                    </div>
-                                {{/if}}
+                                </div>
                             </div>
                         {{/each}}
                     </section>

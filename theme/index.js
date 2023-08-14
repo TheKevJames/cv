@@ -9,6 +9,10 @@ function formatDate(date) {
 }
 
 function formatDates(dates) {
+    if (dates.date) {
+        dates.date = formatDate(dates.date);
+    }
+
     if (dates.startDate) {
         dates.startDate = formatDate(dates.startDate);
     }
@@ -22,20 +26,10 @@ function render(resume) {
     var css = fs.readFileSync(__dirname + '/style.css', 'utf-8');
     var tpl = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
-    var sectionsWithDates = ['work', 'volunteer', 'education'];
-
+    var sectionsWithDates = ['work', 'volunteer', 'education', 'awards'];
     _.each(sectionsWithDates, function(section) {
         _.each(resume[section], function (section) {
-
-            // Format signe date
-            formatDates(section)
-
-            // Format multiple dates
-            if (section.dates) {
-                _.each(section.dates, function (dates) {
-                    formatDates(dates)
-                });
-            }
+            formatDates(section);
         });
     });
 
