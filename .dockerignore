@@ -1,0 +1,6 @@
+.circleci
+.git
+.github
+.pre-commit-config.yaml
+build
+**/node_modules

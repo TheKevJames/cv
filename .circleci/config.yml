@@ -6,24 +6,24 @@ executors:
       - image: google/cloud-sdk:437.0.1
     environment:
       GOOGLE_APPLICATION_CREDENTIALS: /key.json
-  node:
+  docker:
     docker:
-      - image: node:20
-        user: node
+      - image: docker:git
+    environment:
+      DOCKER_BUILDKIT: 1
 
 jobs:
   build:
-    executor: node
+    executor: docker
     steps:
-      - run: apt-get update -qy
-      # https://circleci.com/developer/orbs/orb/threetreeslight/puppeteer
-      - run: |
-          apt-get install -qy \
-            gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
       - checkout
-      - run: npm ci
-      - run: make test
-      - run: make
+      - run: docker build --progress=plain -t cv:latest .
+      - run:
+          name: copy out build folder
+          command: |
+            img=$(docker create cv:latest)
+            docker cp "${img}:/src/build" ./build
+            docker rm -v "${img}"
       - store_artifacts:
           path: ./build
       - persist_to_workspace:
