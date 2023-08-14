@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 
@@ -11,13 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
 
     <style>
-            {{{css}}}
+    {{{css}}}
     </style>
-
 </head>
+
 <body>
 <div id="resume">
-
     {{#resume.basics}}
         <div class="header">
             <div class="fullname">
@@ -49,7 +47,6 @@
     {{/resume.basics}}
 
     <div class="resume-wrapper">
-
         {{#resume.basics}}
             <div class="row">
                 <div class="col-xs-12">
@@ -133,13 +130,13 @@
                     </section>
                 {{/if}}
             </div>
+
             <div class="col-xs-9">
                 {{#if resume.work.length}}
                     <section id="work">
                         <h2>Work Experience</h2>
                         {{#each resume.work}}
                             <div class="item">
-
                                 <div class="row">
                                     <div class="description col-xs-8">
                                         {{#if position}}
@@ -159,44 +156,20 @@
                                         {{/if}}
                                     </div>
                                     <div class="description col-xs-4">
-                                        {{#if dates}}
-                                            {{#each dates}}
-                                                <div class="date">
-
-                                                    {{#if startDate}}
-                                                        <span class="startDate">
-                                                            {{startDate}}
-                                                        </span>
-                                                    {{/if}}
-                                                    {{#if endDate}}
-                                                        <span class="endDate">
-                                                        — {{endDate}}
-				                                    </span>
-                                                    {{else}}
-                                                        <span class="endDate">
-					                                    - Now
-				                                    </span>
-                                                    {{/if}}
-                                                </div>
-                                            {{/each}}
-                                        {{else}}
-                                            <div class="date">
-                                                {{#if startDate}}
-                                                    <span class="startDate">
-                                                        {{startDate}}
-                                                    </span>
-                                                {{/if}}
-                                                {{#if endDate}}
-                                                    <span class="endDate">
-					                            — {{endDate}}
-				                            </span>
-                                                {{else}}
-                                                    <span class="endDate">
-					                            - Now
-				                            </span>
-                                                {{/if}}
-                                            </div>
-                                        {{/if}}
+                                        <div class="date">
+                                            {{#if startDate}}
+                                                <span class="startDate">
+                                                    {{startDate}}
+                                                </span>
+                                            {{/if}}
+                                            <span class="endDate">
+                                            {{#if endDate}}
+                                                — {{endDate}}
+                                            {{else}}
+                                                — Now
+                                            {{/if}}
+                                            </span>
+                                        </div>
 
                                         {{#if website}}
                                             <div class="website">
@@ -235,7 +208,6 @@
                         <h2>Education</h2>
                         {{#each resume.education}}
                             <div class="item">
-
                                 <div class="row">
                                     <div class="col-xs-8">
                                         {{#if institution}}
