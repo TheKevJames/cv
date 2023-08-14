@@ -19,6 +19,7 @@ jobs:
     executor: docker
     steps:
       - checkout
+      - setup_remote_docker
       - run: docker build --progress=plain -t cv:latest .
       - run:
           name: copy out build folder
