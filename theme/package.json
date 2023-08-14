@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-direct",
+  "name": "jsonresume-theme-thekevjames",
   "version": "0.1.1",
-  "description": "A simple yet elegant theme for JSON Resume",
-  "author": "Martin Rancourt",
+  "description": "",
+  "author": "Kevin James",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrancourt/jsonresume-theme-direct"
+    "url": "https://github.com/TheKevJames/cv"
   },
   "license": "MIT",
   "dependencies": {

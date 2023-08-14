@@ -1,7 +1,9 @@
 RESUMECLI := node_modules/resume-cli/build/main.js
+OBJS := build/cv.html
+# OBJS := build/cv.html build/cv.pdf
 
-all: build/cv.html
-# all: build/cv.html build/cv.pdf
+.PHONY: $(OBJS)
+all: $(OBJS)
 
 test: $(RESUMECLI)
 	$< validate
@@ -10,8 +12,8 @@ build:
 	mkdir -p $@
 
 build/cv.html: $(RESUMECLI) build
-	$< export --format=html --theme=direct $@
+	$< export --format=html --theme=thekevjames $@
 
 build/cv.pdf: $(RESUMECLI) build
 	# TODO: fixme
-	$< export --format=pdf --theme=direct $@
+	$< export --format=pdf --theme=thekevjames $@

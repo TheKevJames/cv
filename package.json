@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "jsonresume-theme-direct": "file:./theme",
+    "jsonresume-theme-thekevjames": "file:./theme",
     "resume-cli": "3.0.8"
   },
   "name": "src"
