@@ -43,10 +43,11 @@ RUN apt-get update -qy && \
         wget \
         xdg-utils
 
-USER node
 WORKDIR /src
 COPY ./ .
 
 RUN npm ci --no-audit --no-fund --loglevel=verbose
 RUN make test
+
+USER node
 RUN make
