@@ -21,19 +21,14 @@
         "url": "https://github.com/TheKevJames"
       },
       {
+        "network": "LinkedIn",
+        "username": "TheKevJames",
+        "url": "https://linkedin.com/in/TheKevJames"
+      },
+      {
         "network": "Twitter",
         "username": "TheKevJ",
         "url": "https://twitter.com/TheKevJ"
-      },
-      {
-        "network": "Facebook",
-        "username": "TheKevJames",
-        "url": "https://fb.me/TheKevJames"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "Kevin James",
-        "url": "https://linkedin.com/in/thekevjames"
       }
     ]
   },
