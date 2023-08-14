@@ -45,9 +45,9 @@ RUN apt-get update -qy && \
 
 WORKDIR /src
 COPY ./ .
-
-RUN npm ci --no-audit --no-fund --loglevel=verbose
-RUN make test
+RUN chown -R node:node /src
 
 USER node
+RUN npm ci --no-audit --no-fund --loglevel=verbose
+RUN make test
 RUN make
