@@ -8,13 +8,14 @@ executors:
       GOOGLE_APPLICATION_CREDENTIALS: /key.json
   node:
     docker:
-      - image: node:20-alpine
+      - image: node:20
 
 jobs:
   build:
     executor: node
     steps:
-      - run: apk add -U make
+      - run: apt-get update -qy
+      - run: apt-get install -qy make
       - checkout
       - run: npm ci
       - run: make test
