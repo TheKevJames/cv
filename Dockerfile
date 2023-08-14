@@ -1,6 +1,7 @@
 FROM node:20-bullseye
 
 # https://circleci.com/developer/orbs/orb/threetreeslight/puppeteer
+# also: libgbm1 (https://github.com/actions/runner-images/issues/732)
 RUN apt-get update -qy && \
     apt-get install -qy \
         ca-certificates \
@@ -16,6 +17,7 @@ RUN apt-get update -qy && \
         libdbus-1-3 \
         libexpat1 \
         libfontconfig1 \
+        libgbm1 \
         libgcc1 \
         libgconf-2-4 \
         libgdk-pixbuf2.0-0 \
