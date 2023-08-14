@@ -1,12 +1,6 @@
 {
   "dependencies": {
-    "jsonresume-theme-direct": "0.1.1",
-    "jsonresume-theme-elegant": "1.16.1",
-    "jsonresume-theme-eloquent": "4.1.0",
-    "jsonresume-theme-flat": "0.3.7",
-    "jsonresume-theme-fresh": "0.0.3",
-    "jsonresume-theme-slick": "0.1.16",
-    "jsonresume-theme-spartacus-prime": "1.0.6",
+    "jsonresume-theme-direct": "file:./theme",
     "resume-cli": "3.0.8"
   },
   "name": "src"
