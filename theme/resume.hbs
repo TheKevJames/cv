@@ -243,16 +243,18 @@
                                                 {{institution}}
                                             </div>
                                         {{/if}}
-                                        {{#if area}}
-                                            <div class="area">
-                                                {{area}}
-                                            </div>
-                                        {{/if}}
-                                        {{#if studyType}}
-                                            <div class="studyType">
-                                                {{studyType}}
-                                            </div>
-                                        {{/if}}
+                                        <div class="description col-xs-8">
+                                            {{#if studyType}}
+                                                <span class="studyType">
+                                                    {{studyType}}
+                                                </span>
+                                            {{/if}}
+                                            {{#if area}}
+                                                <span class="area">
+                                                    {{area}}
+                                                </span>
+                                            {{/if}}
+                                        </div>
                                         {{#if gpa}}
                                             <div class="gpa">
                                                 GPA: {{gpa}}

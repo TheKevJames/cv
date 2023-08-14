@@ -110,6 +110,11 @@ section {
     font-weight: bold;
 }
 
+.studyType:after {
+    content: ' of ';
+    font-weight: normal;
+}
+
 .position:after {
     content: ' at ';
     font-weight: normal;
