@@ -200,11 +200,15 @@
     },
     {
       "language": "French",
-      "fluency": "Fluent"
+      "fluency": "Intermediate"
     },
     {
       "language": "Spanish",
-      "fluency": "Fluent"
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Portuguese (European)",
+      "fluency": "Beginner"
     }
   ],
   "meta": {
