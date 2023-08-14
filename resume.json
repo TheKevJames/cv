@@ -7,13 +7,6 @@
     "email": "KevinJames@thekev.in",
     "phone": "(650) 686-9458",
     "website": "https://thekev.in",
-    "location": {
-      "address": "2361-2291 Stockton St",
-      "postalCode": "CA 94117",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
     "profiles": [
       {
         "network": "Github",
