@@ -128,7 +128,7 @@ section {
     content: '';
 }
 
-section .website, section .date{
+section .website, section .date {
     text-align: right;
 }
 
@@ -139,6 +139,10 @@ section .website, section .date{
 
 .date {
     text-transform: uppercase;
+    color: #666;
+}
+
+.location {
     color: #666;
 }
 
