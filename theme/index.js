@@ -1,6 +1,5 @@
 var fs = require('fs');
 var Handlebars = require('handlebars');
-var _ = require('underscore');
 var moment = require('moment');
 
 function formatDate(date) {
@@ -27,10 +26,9 @@ function render(resume) {
     var tpl = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
     var sectionsWithDates = ['work', 'volunteer', 'education', 'awards'];
-    _.each(sectionsWithDates, function(section) {
-        _.each(resume[section], function (section) {
-            formatDates(section);
-        });
+    sectionsWithDates.forEach((section) => {
+        if (!resume[section]) { return; }
+        resume[section].map(formatDates);
     });
 
     return Handlebars.compile(tpl)({

@@ -1,17 +1,19 @@
 {
-  "name": "jsonresume-theme-thekevjames",
-  "version": "0.1.1",
-  "description": "",
   "author": "Kevin James",
+  "dependencies": {
+    "flexboxgrid": "^6.3.0",
+    "handlebars": "^2.0.0-alpha.4",
+    "moment": "^2.11.2"
+  },
+  "description": "Personal CV Template",
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "license": "MIT",
+  "name": "jsonresume-theme-thekevjames",
   "repository": {
     "type": "git",
     "url": "https://github.com/TheKevJames/cv"
   },
-  "license": "MIT",
-  "dependencies": {
-    "flexboxgrid": "^6.3.0",
-    "handlebars": "^2.0.0-alpha.4",
-    "moment": "^2.11.2",
-    "underscore": "^1.8.3"
-  }
+  "version": "0.1.1"
 }
