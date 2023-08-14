@@ -3,36 +3,47 @@ version: 2.1
 executors:
   gcloud:
     docker:
-      - image: google/cloud-sdk:437.0.1
+      - image: google/cloud-sdk:437.0.1-alpine
     environment:
       GOOGLE_APPLICATION_CREDENTIALS: /key.json
     resource_class: large
-  docker:
+  node:
     docker:
-      - image: docker:git
-    environment:
-      DOCKER_BUILDKIT: 1
+      - image: node:20.5.1-alpine
+    resource_class: large
+  pandoc:
+    docker:
+      - image: pandoc/core:3.1.1
     resource_class: large
 
 jobs:
   build:
-    executor: docker
+    executor: node
     steps:
+      - run: apk add -U make
       - checkout
-      - setup_remote_docker
-      - run: docker build --progress=plain -t cv:latest .
-      - run:
-          name: copy out build folder
-          command: |
-            img=$(docker create cv:latest)
-            docker cp "${img}:/src/build" ./build
-            docker rm -v "${img}"
+      - run: npm ci
+      - run: make test
+      - run: make build/cv.html
       - store_artifacts:
           path: ./build
       - persist_to_workspace:
           root: build
           paths:
             - cv.html
+
+  convert:
+    executor: pandoc
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - run: mkdir build
+      - run: pandoc -obuild/cv.pdf /tmp/cv.html
+      - store_artifacts:
+          path: ./build
+      - persist_to_workspace:
+          root: build
+          paths:
             - cv.pdf
 
   upload:
@@ -49,9 +60,12 @@ workflows:
   run-jobs:
     jobs:
       - build
+      - convert:
+          requires:
+            - build
       - upload:
           filters:
             branches:
               only: master
           requires:
-            - build
+            - convert
