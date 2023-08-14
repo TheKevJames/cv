@@ -11,9 +11,9 @@ executors:
     docker:
       - image: node:20.5.1-alpine
     resource_class: large
-  pandoc:
+  wkhtmltopdf:
     docker:
-      - image: pandoc/core:3.1.1
+      - image: surnet/alpine-wkhtmltopdf:3.18.0-0.12.6-small
     resource_class: large
 
 jobs:
@@ -33,12 +33,12 @@ jobs:
             - cv.html
 
   convert:
-    executor: pandoc
+    executor: wkhtmltopdf
     steps:
       - attach_workspace:
           at: /tmp
       - run: mkdir build
-      - run: pandoc -obuild/cv.pdf /tmp/cv.html
+      - run: wkhtmltopdf /tmp/cv.html build/cv.pdf
       - store_artifacts:
           path: ./build
       - persist_to_workspace:
