@@ -1,0 +1,457 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Kevin James",
+    "label": "Staff Software Engineer, Tech Lead",
+    "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
+    "email": "KevinJames@thekev.in",
+    "phone": "(650) 686-9458",
+    "website": "https://thekev.in",
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "TheKevJames",
+        "url": "https://github.com/TheKevJames"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "TheKevJames",
+        "url": "https://linkedin.com/in/TheKevJames"
+      },
+      {
+        "network": "Twitter",
+        "username": "TheKevJ",
+        "url": "https://twitter.com/TheKevJ"
+      },
+      {
+        "network": "Facebook",
+        "username": "TheKevJames",
+        "url": "https://www.facebook.com/TheKevJames"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Dialpad",
+      "position": "Staff Software Engineer, Tech Lead (AI)",
+      "url": "https://dialpad.com",
+      "startDate": "2020-05-01",
+      "highlights": [],
+      "location": "San Francisco, CA; Remote"
+    },
+    {
+      "name": "Dialpad",
+      "position": "Software Engineer, Tech Lead (AI)",
+      "url": "https://dialpad.com",
+      "startDate": "2018-05-16",
+      "endDate": "2020-04-30",
+      "highlights": [],
+      "location": "San Francisco, CA"
+    },
+    {
+      "name": "TalkIQ",
+      "position": "Server Engineer, Tech Lead",
+      "url": "https://talkiq.com",
+      "startDate": "2018-01-01",
+      "endDate": "2018-05-16",
+      "highlights": [],
+      "location": "San Francisco, CA"
+    },
+    {
+      "name": "TalkIQ",
+      "position": "Infrastructure Engineer",
+      "url": "https://talkiq.com",
+      "startDate": "2017-08-01",
+      "endDate": "2017-12-31",
+      "highlights": [],
+      "location": "San Francisco, CA"
+    },
+    {
+      "name": "TalkIQ",
+      "position": "Infrastructure Engineer (Intern)",
+      "url": "https://talkiq.com",
+      "startDate": "2016-08-22",
+      "endDate": "2016-12-16",
+      "highlights": [
+        "Integrated logging and monitoring systems across disparate systems",
+        "Overhauled pipelined services for migration to new cloud provider"
+      ],
+      "location": "San Francisco, CA"
+    },
+    {
+      "name": "AeroFS",
+      "position": "System Developer & Operations Engineer (Intern)",
+      "url": "https://www.aerofs.com",
+      "startDate": "2016-01-04",
+      "endDate": "2016-04-29",
+      "highlights": [
+        "Released file-share SDK and unidirectional drop box app",
+        "Implemented full file search across AeroFS product suite",
+        "Optimized system build and packaging process for continuous delivery and failure recovery",
+        "Integrated user notifications with OSX notification center"
+      ],
+      "location": "Palo Alto, CA"
+    },
+    {
+      "name": "TalkIQ",
+      "position": "Data Scientist & Software Engineer (Intern)",
+      "url": "https://talkiq.com",
+      "startDate": "2015-04-27",
+      "endDate": "2015-08-28",
+      "highlights": [
+        "Worked to improve Word Error Rate of speech transcription systems",
+        "Developed core customer insight visualizations and dashboards",
+        "Refined database queries and performed overhauls to significantly improve overall throughput",
+        "Researched automated question-detection and objection tracking",
+        "Streamlined development practices for continuous integration"
+      ],
+      "location": "San Francisco, CA"
+    },
+    {
+      "name": "Enflick",
+      "position": "Server Developer (Intern)",
+      "url": "https://www.textnow.com",
+      "startDate": "2014-08-01",
+      "endDate": "2014-12-19",
+      "highlights": [
+        "Implemented an automated machine learning system for spam detection",
+        "Optimized system to handle millions of concurrent users"
+      ],
+      "location": "Waterloo, ON"
+    },
+    {
+      "name": "Wriber",
+      "position": "Lead Data Engineer (Intern)",
+      "url": "https://www.wriber.com",
+      "startDate": "2014-01-06",
+      "endDate": "2014-05-02",
+      "highlights": [
+        "Created a natural language processing system which provided insights to help writers expand their work",
+        "Designed a machine learning system capable of learning to rank, regression analysis, and unbounded classification",
+        "Developed algorithms to sort, categorize, and rank the quality of related content and our own insights"
+      ],
+      "location": "Waterloo, ON"
+    },
+    {
+      "name": "Oracle",
+      "position": "Software Developer (Intern)",
+      "url": "https://www.oracle.com",
+      "startDate": "2013-03-29",
+      "endDate": "2013-08-30",
+      "highlights": [
+        "Wrote a streaming JSON-parser which transforms highly nested JSON files into a standard relational database format",
+        "Automated a notoriously difficult installation process"
+      ],
+      "location": "Cambridge, MA"
+    },
+    {
+      "name": "Staples",
+      "position": "Technical Sales & Front End Associate",
+      "url": "https://staples.ca",
+      "location": "Winnipeg, MB"
+    },
+    {
+      "name": "Cholakis Dental Group",
+      "position": "Technical Solutions Specialist & IT Administrator",
+      "url": "https://www.cholakisdental.com/",
+      "location": "Winnipeg, MB",
+      "startDate": "2012-06",
+      "endDate": "2012-08",
+      "highlights": [
+        "Analyzed and improved system security to medical standards",
+        "Maintained and integrated various medical systems"
+      ]
+    },
+    {
+      "name": "Various",
+      "position": "Actor",
+      "location": "Manitoba",
+      "startDate": "2000",
+      "endDate": "2008",
+      "highlights": [
+        "Principal Actor, Porcelain Dreams (Film, Michael Reisacher, 2004-06, Poke 1024)",
+        "Large Principal Actor, Target Practice (Film, John Kozac, 2002-08)",
+        "Lead Actor, A Track on the Gardener (Film, Howard Curle, 2003-05)",
+        "Actor, On the Sideline (Film, Chantelle Bourrier, 2006-03)",
+        "Extra, Maneater (Film, Maneater Film Inc., 2006-08)",
+        "Actor, Sex Life (TV Pilot, Patricia Rozema, 2005-10, South of the Border Productions Inc. for HBO)",
+        "Actor (Pushy Salesperson) (Commercial, Dufresne Furniture & Appliances, 2003-09, Lank Beach Productions Inc.)",
+        "SOC (Paperboy) (Commercial, Dufresne Furniture & Appliances, 2003-09, Lank Beach Productions Inc.)",
+        "SOC (Pupil) (Commercial, Dufresne Furniture & Appliances, 2003-09, Lank Beach Productions Inc.)",
+        "SOC (Injured Boy) (Commercial, Manitoba Public Insurance, 2003-02, Lank Beach Productions Inc.)",
+        "Principal Actor (Billy), The Halloween Show, cast of 3 (Voice, Manitoba Museum with Scott Young, 2003, The Planetarium)",
+        "Principal Actor (Pete), You Will Write Won't You?, cast of 8 (Stage, RGI International, 2008, KidsFringe Theatre Festival)",
+        "Principle Actor (Bumpy-Bumpy), The Popsicle-Stick Wand, cast of 5 (Stage, RGI International, 2006 & 2007, KidsFringe Theatre Festival)",
+        "Actor (Boy), An Evening of Abbot & Costello, cast of 6 (Stage, Chase and Hamill, 2007, The Park Theatre)",
+        "Principal Actor (Aladdin), Aladdin, cast of 7 (Stage, 2007, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Lead Actor (Prince Falcon-Tamer), The Little Mermaid, cast of 20 (Stage, 2007, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Lead Actor (Malcolm, the Apprentice), The Sorcerer's Apprentice, cast of 14 (Stage, 2006, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Actor (Tumnus), The Lion The Witch and The Wardrobe, cast of 25 (Stage, 2006, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Principal Actor (Hansel), Hansel and Gretel, cast of 6 (Stage, 2001 & 2003, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Principal Actor (Hansel), Hansel and Gretel, cast of 6 (Stage, 2003 & 2005 & 2006, Fantasy Theatre, Fringe Festival)",
+        "Actor (Sid), Tom Sawyer, cast of 26 (Musical, 2002 & 2005, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Lead Actor (The Boy), Velveteen Rabbit, cast of 17 (Musical, 2004, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Lead Actor (Long Fo), The Stolen Prince, cast of 14 (Stage, 2004 & 2005, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Principal Actor (Marvin Lee Who), Max and the Grinch, cast of 6 (Musical, 2001 & 2002 & 2003 & 2005 & 2006, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Lead Actor (Cowboy, Sailor, Announcer, Teller), The Lion Who Wouldn't, cast of 10 (Musical, 2001, Fantasy Theatre, Forrest Nickerson Theatre)",
+        "Principal Actor, TV Sal and the Game Show from Outer Space (Stage, 2003, Ecole Dieppe, Reader's Theatre)",
+        "Principal Actor (Santa), A French Christmas (Stage, 2002, Ecole Dieppe)",
+        "Lead Actor (Talking Small Tree), The Sharing Tree (Stage, 2000, Ecole Dieppe)",
+        "Actor, Reader's Theatre (Stage, 2000, Charleswood Junior High)"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "University of Waterloo SHADOW Program",
+      "position": "Mentor",
+      "startDate": "2012-09-03",
+      "endDate": "2013-04-20"
+    },
+    {
+      "organization": "Youth in Philanthropy",
+      "position": "Ambassador",
+      "startDate": "2010-09",
+      "endDate": "2012-06"
+    },
+    {
+      "organization": "St. John's-Ravenscourt",
+      "position": "Student Ambassador",
+      "startDate": "2010-09",
+      "endDate": "2012-06"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Waterloo",
+      "url": "https://uwaterloo.ca",
+      "area": "Software Engineering, Honours",
+      "studyType": "Bachelor",
+      "startDate": "2012-09-03",
+      "endDate": "2017-04-21",
+      "courses": [
+        "Android App Development",
+        "CS 137",
+        "CS 138",
+        "CS 240",
+        "CS 241",
+        "CS 247",
+        "CS 341",
+        "CS 349",
+        "Calculus 1500",
+        "ECE 105",
+        "ECE 106",
+        "ECE 124",
+        "ECE 140",
+        "ECE 222",
+        "ENGL 119",
+        "Linear Algebra 1300",
+        "MATH 115",
+        "MATH 117",
+        "MATH 119",
+        "MATH 135",
+        "MATH 213",
+        "MATH 239",
+        "PSYCH 101",
+        "SCI 238",
+        "SE 101",
+        "SE 102",
+        "SE 201",
+        "SE 202",
+        "SE 212",
+        "SE 301",
+        "SE 350",
+        "SE 465",
+        "STAT 2016"
+      ]
+    },
+    {
+      "institution": "St. John's-Ravenscourt",
+      "url": "https://www.sjr.mb.ca/",
+      "area": "High School Diploma, Honours",
+      "startDate": "2007-09",
+      "endDate": "2012-06",
+      "score": "Honour Roll 2009, 2010, 2011, and 2012; 34/36 on ACT; 99th Pct PSAT; 5/5 on AP Calculus AB; 3/5 on AP Chemistry; 5/5 on AP Comp Science A; 5/5 on AP English Language and Composition; 4/5 on AP English Literature and Composition; 5/5 on AP Physics B; 800/800 on SAT Critical Reading (99th Pct); 760/800 on SAT Math (98th Pct); 690/800 on SAT Writing (95th Pct); 800/800 on SAT II Math 2",
+      "courses": [
+        "Chess, Grades 4-8",
+        "Tactical Simulations, Grades 7-8",
+        "C++ Programming, Grades 9-10",
+        "Science Investigations, Grades 10-11",
+        "ibid (Designer/Contributor), Grades 11-12",
+        "Live! in Print (Editor/Designer/Contributor), Grade 12",
+        "Creative Writing, Grades 10-12"
+      ]
+    },
+    {
+      "institution": "Fantasy Theatre (with Tony Frost)",
+      "area": "Stage Acting and Musicals",
+      "startDate": "2000",
+      "endDate": "2008"
+    },
+    {
+      "institution": "The Children's Acting Center (with Lois Brothers)",
+      "area": "Acting for Film",
+      "startDate": "2004-10",
+      "endDate": "2004-12"
+    },
+    {
+      "institution": "Manitoba Theatre for Young People",
+      "area": "Stage Acting",
+      "startDate": "1999",
+      "endDate": "1999"
+    },
+    {
+      "institution": "Prairie Theatre Exchange",
+      "area": "Stage Acting",
+      "startDate": "1999",
+      "endDate": "1999"
+    }
+  ],
+  "awards": [
+    {
+      "title": "President's Scholarship of Distinction",
+      "date": "2012-09",
+      "awarder": "University of Waterloo"
+    },
+    {
+      "title": "Software Engineering Entrance Scholarship",
+      "date": "2012-09",
+      "awarder": "University of Waterloo"
+    },
+    {
+      "title": "AP Scholar with Distinction",
+      "date": "2012-06",
+      "awarder": "College Board",
+      "summary": "Granted to students who receive an average score of at least 3.5 on all AP Exams taken and scores of 3 or higher on five or more of these exams"
+    },
+    {
+      "title": "National AP Scholar (Canada)",
+      "date": "2012-06",
+      "awarder": "College Board",
+      "summary": "Granted to students in Canada who receive an average score of at least 4 on all AP Exams taken and scores of 4 or higher on five or more of these exams"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Apple Product Professional",
+      "date": "2012-03-01",
+      "awarder": "Apple"
+    },
+    {
+      "title": "Social Innovator",
+      "date": "2010-05-19",
+      "awarder": "World Bank Institute"
+    },
+    {
+      "title": "1st Dan Black Belt, Tae Kwon Do",
+      "date": "2006-09-01",
+      "awarded": "Stringer-Choi Martial Arts Centre Inc."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "French",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "Portuguese (European)",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Guitar (Blues, Rock)",
+      "keywords": [
+        "Lenny Breau School of Music, 2007-2010",
+        "SJR Rock Show, 2006-2012"
+      ]
+    },
+    {
+      "name": "Multi-instrumentalist (Jazz)",
+      "keywords": [
+        "Master Plan, 2010-2012"
+      ]
+    },
+    {
+      "name": "Piano (Concert)",
+      "keywords": [
+        "Tauber Music School, 2000-2002"
+      ]
+    },
+    {
+      "name": "Saxophone (Concert, Jazz)",
+      "keywords": [
+        "Master Plan, 2010-2012",
+        "SJR Concert Band, 2006-2012",
+        "SJR Jazz Band, 2006-2012",
+        "SJR Rock Show, 2006-2012"
+      ]
+    },
+    {
+      "name": "Tae Kwon Do",
+      "keywords": [
+        "Stringer-Choi Martial Arts Centre Inc., 2004-2006"
+      ]
+    },
+    {
+      "name": "Vocals (Choir, Classical, Pop, Rock)",
+      "keywords": [
+        "Boy's Choir, 2002-2006",
+        "Master Plan, 2010-2012",
+        "Misc Choral Productions, 1998-2002",
+        "National Anthem at the Winnipeg Arena (Manitoba Moose), Boy's Choir, 2002",
+        "SJR Rock Show, 2006-2012",
+        "Winnipeg Symphony Orchestra, 2005"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "DeadSimpleOps",
+      "description": "Created an easy-to-use set of DevOps commands for any project design",
+      "roles": ["Creator"],
+      "startDate": "2015",
+      "endDate": "2017"
+    },
+    {
+      "name": "PackTeX",
+      "description": "Designed an easy-to-use, cross-platform *TeX package manager",
+      "roles": ["Creator"],
+      "startDate": "2014",
+      "endDate": "2019"
+    },
+    {
+      "name": "AlmostEmpty",
+      "description": "Built a standards-oriented barebones project creator for multiple languages and frameworks",
+      "roles": ["Creator"],
+      "startDate": "2014",
+      "endDate": "2018"
+    },
+    {
+      "name": "EngPort"
+    },
+    {
+      "name": "wkrpt"
+    },
+    {
+      "name": "UWHub",
+      "description": "Lead a team of four developers to create an app which interfaced with the University of Waterloo API",
+      "roles": ["Team Lead", "Designer", "Programmer"],
+      "startDate": "2012",
+      "endDate": "2013"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
