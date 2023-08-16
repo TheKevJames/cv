@@ -1,3 +1,11 @@
 {
   "extends": ["github>thekevjames/tools:personal"],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "google/cloud-sdk",
+      ],
+      "automerge": true,
+    },
+  ]
 }
