@@ -9,11 +9,11 @@ executors:
     resource_class: large
   node:
     docker:
-      - image: node:21.4.0-alpine
+      - image: node:21.1.0-alpine
     resource_class: large
   wkhtmltopdf:
     docker:
-      - image: surnet/alpine-wkhtmltopdf:3.18.0-0.12.6-small
+      - image: surnet/alpine-wkhtmltopdf:3.19.0-0.12.6-small
     resource_class: large
 
 jobs:
