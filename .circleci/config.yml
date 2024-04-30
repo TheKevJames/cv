@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  linter: talkiq/linter@4
+
 executors:
   gcloud:
     docker:
@@ -11,6 +14,10 @@ executors:
     docker:
       - image: node:22.0.0-alpine
     resource_class: large
+  python:
+    docker:
+      - image: python:3.11.9
+    resource_class: medium
   wkhtmltopdf:
     docker:
       - image: surnet/alpine-wkhtmltopdf:3.19.1-0.12.6-small
@@ -57,8 +64,24 @@ jobs:
       - run: gcloud storage cp build/cv.* gs://thekevjames-artifacts
 
 workflows:
-  run-jobs:
+  build:
+    when:
+      not:
+        equal: [ master, << pipeline.git.branch >> ]
     jobs:
+      - linter/pre-commit:
+          executor: python
+      - build
+      - convert:
+          requires:
+            - build
+
+  upload:
+    when:
+      equal: [ master, << pipeline.git.branch >> ]
+    jobs:
+      - linter/pre-commit:
+          executor: python
       - build
       - convert:
           requires:
