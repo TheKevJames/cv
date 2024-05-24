@@ -2,7 +2,6 @@
   "extends": ["github>thekevjames/tools:personal"],
   "packageRules": [
     {
-      "matchManagers": ["dockerfile"],
       "matchPackageNames": [
         "google/cloud-sdk",
       ],
