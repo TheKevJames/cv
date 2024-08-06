@@ -20,7 +20,7 @@ executors:
     resource_class: medium
   wkhtmltopdf:
     docker:
-      - image: surnet/alpine-wkhtmltopdf:3.20.0-0.12.6-small
+      - image: surnet/alpine-wkhtmltopdf:3.20.2-0.12.6-small
     resource_class: large
 
 jobs:
