@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-thekevjames": "file:./theme",
     "resume-cli": "3.1.2"
   },

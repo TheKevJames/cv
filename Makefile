@@ -10,6 +10,6 @@ test: $(RESUMECLI)
 build:
 	mkdir -p $@
 build/cv.html: $(RESUMECLI) build
-	$< export --format=html --theme=thekevjames $@
+	$< export --format=html --theme=flat $@
 build/cv.pdf: $(RESUMECLI) build
-	$< export --format=pdf --theme=thekevjames $@
+	$< export --format=pdf --theme=flat $@
