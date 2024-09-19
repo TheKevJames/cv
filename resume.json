@@ -181,6 +181,32 @@
       "summary": "Granted to students in Canada who receive an average score of at least 4 on all AP Exams taken and scores of 4 or higher on five or more of these exams"
     }
   ],
+  "publications": [
+    {
+      "name": "Patent US11169798B1 for automated AI model development",
+      "publisher": "US Patent Office",
+      "releaseDate": "2021-11-09",
+      "url": "https://patents.google.com/patent/US11169798B1"
+    },
+    {
+      "name": "Patent US11050807B1 for integrated AI and VoIP platforms",
+      "publisher": "US Patent Office",
+      "releaseDate": "2021-06-29",
+      "url": "https://patents.google.com/patent/US11050807B1"
+    },
+    {
+      "name": "How Dialpad Moved Its Python AI Development from Pip to Poetry",
+      "publisher": "TheNewStack, syndicated: DevOpsChat, Python Weekly",
+      "releaseDate": "2021-10-06",
+      "url": "https://thenewstack.io/how-dialpad-migrated-its-ai-development-from-pip-to-poetry/"
+    },
+    {
+      "name": "Kubernetes Engine (GKE) multi-cluster life cycle management series",
+      "publisher": "Google Cloud",
+      "releaseDate": "2020-04-21",
+      "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"
+    }
+  ],
   "languages": [
     {
       "language": "English",
