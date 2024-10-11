@@ -350,6 +350,18 @@
   ],
   "publications": [
     {
+      "name": "Patent US11410658B1 for automated pipeline for ASR speech modeling",
+      "publisher": "US Patent Office",
+      "releaseDate": "2022-08-09",
+      "url": "https://patents.google.com/patent/US11410658B1"
+    },
+    {
+      "name": "Patent US11226844B1 for universally proactive compute resource scaling",
+      "publisher": "US Patent Office",
+      "releaseDate": "2022-01-18",
+      "url": "https://patents.google.com/patent/US11226844B1"
+    },
+    {
       "name": "Patent US11169798B1 for automated AI model development",
       "publisher": "US Patent Office",
       "releaseDate": "2021-11-09",
