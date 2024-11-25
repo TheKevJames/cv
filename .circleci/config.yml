@@ -12,7 +12,7 @@ executors:
     resource_class: large
   node:
     docker:
-      - image: node:23.2.0-alpine
+      - image: node:23.3.0-alpine
     resource_class: large
   python:
     docker:
