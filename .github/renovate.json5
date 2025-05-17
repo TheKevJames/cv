@@ -1,11 +1,6 @@
 {
-  "extends": ["github>thekevjames/tools:personal"],
-  "packageRules": [
-    {
-      "matchPackageNames": [
-        "google/cloud-sdk",
-      ],
-      "automerge": true,
-    },
-  ]
+    "extends": [
+        "github>thekevjames/tools:personal",
+        "github>thekevjames/tools//renovate/version-as-app.json5",
+    ],
 }
