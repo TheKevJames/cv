@@ -1,15 +1,15 @@
-RESUMECLI := node_modules/resume-cli/build/main.js
+RESUMED := node_modules/resumed/bin/resumed.js
 OBJS := build/cv.html build/cv.pdf
 
 .PHONY: $(OBJS)
 all: $(OBJS)
 
-test: $(RESUMECLI)
-	$< validate
+test:
+	$(RESUMED) validate
 
 build:
 	mkdir -p $@
-build/cv.html: $(RESUMECLI) build
-	$< export --format=html --theme=thekevjames $@
-build/cv.pdf: $(RESUMECLI) build
-	$< export --format=pdf --theme=thekevjames $@
+build/cv.html: resume.json build
+	$(RESUMED) render --theme=jsonresume-theme-thekevjames --output=$@ $<
+build/cv.pdf: resume.json build
+	$(RESUMED) export --theme=jsonresume-theme-thekevjames --output=$@ $<
