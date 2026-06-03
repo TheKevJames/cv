@@ -39,6 +39,7 @@ jobs:
           paths:
             - cv.html
 
+  # TODO: make build/cv.pdf directly
   convert:
     executor: wkhtmltopdf
     steps:
