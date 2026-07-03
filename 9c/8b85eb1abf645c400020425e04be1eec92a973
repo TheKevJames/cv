@@ -1,0 +1,21 @@
+package.json
+  s_7b520c05506597::t_b8f7ada5412332 4
+package-lock.json
+  s_7b520c05506597::t_5e5e341124d166 10,27-29,42-43,48-50,251-253,257,261,272-274,277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "9c8b85eb1abf645c400020425e04be1eec92a973",
+  "prompts": {},
+  "sessions": {
+    "s_7b520c05506597": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "019f2826-f1a8-7d58-b2e7-fcdb19e1e44b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Kevin James <KevinJames@thekev.in>"
+    }
+  }
+}
