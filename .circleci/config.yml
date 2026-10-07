@@ -6,7 +6,7 @@ orbs:
 executors:
   gcloud:
     docker:
-      - image: google/cloud-sdk:587.0.0-alpine
+      - image: google/cloud-sdk:588.0.0-alpine
     environment:
       GOOGLE_APPLICATION_CREDENTIALS: /key.json
     resource_class: large
