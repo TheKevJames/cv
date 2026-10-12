@@ -4,5 +4,8 @@
     "puppeteer": "25.13.0",
     "resumed": "7.0.0"
   },
-  "name": "src"
+  "name": "src",
+  "workspaces": [
+    "theme"
+  ]
 }
