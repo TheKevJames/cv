@@ -20,3 +20,58 @@ jobs:
           # renovate: datasource=pypi depName=prek
           prek-version: v0.5.5
           extra-args: --all-files
+
+  build:
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          cache: npm
+          # renovate: datasource=docker depName=node
+          node-version: 26.11.1
+      # npm's cache doesn't cover the browser puppeteer downloads on install.
+      - uses: actions/cache@v6.1.0
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - run: npm ci
+      - run: make test
+      # Chrome's sandbox needs unprivileged user namespaces, which Ubuntu
+      # 23.10+ restricts via AppArmor.
+      - run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - run: make build/cv.html build/cv.pdf
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: cv
+          path: build/
+          retention-days: 7
+
+  upload:
+    needs: [lint, build]
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    runs-on: ubuntu-26.04
+    concurrency:
+      group: upload
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      # google-github-actions/auth writes its credentials file into the
+      # workspace, which must exist first.
+      - uses: actions/checkout@v7.0.1
+      - uses: google-github-actions/auth@v3.0.0
+        with:
+          workload_identity_provider: projects/523035435583/locations/global/workloadIdentityPools/github/providers/github
+          project_id: thekevjames-175823
+      - uses: actions/download-artifact@v8.0.2
+        with:
+          name: cv
+          path: build/
+      - uses: google-github-actions/upload-cloud-storage@v3.0.0
+        with:
+          path: build
+          destination: thekevjames-artifacts
+          parent: false

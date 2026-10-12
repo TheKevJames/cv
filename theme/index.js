@@ -37,6 +37,16 @@ function render(resume) {
     });
 }
 
+var pdfRenderOptions = {
+    format: 'A4',
+    margin: {top: '10mm', right: '10mm', bottom: '10mm', left: '10mm'},
+    printBackground: true,
+    scale: 0.75
+};
+
+// resumed import()s the theme, so Node only exposes exports that its CJS
+// lexer can detect statically; keep every value here a bare identifier.
 module.exports = {
+    pdfRenderOptions: pdfRenderOptions,
     render: render
 };
