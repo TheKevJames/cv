@@ -75,3 +75,4 @@ jobs:
           path: build
           destination: thekevjames-artifacts
           parent: false
+          process_gcloudignore: false
