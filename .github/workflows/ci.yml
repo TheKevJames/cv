@@ -30,7 +30,7 @@ jobs:
         with:
           cache: npm
           # renovate: datasource=docker depName=node
-          node-version: 26.12.0
+          node-version: 26.12.1
       # npm's cache doesn't cover the browser puppeteer downloads on install.
       - uses: actions/cache@v6.1.0
         with:
