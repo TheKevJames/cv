@@ -2,7 +2,7 @@
   "dependencies": {
     "jsonresume-theme-thekevjames": "file:./theme",
     "puppeteer": "25.14.0",
-    "resumed": "7.0.0"
+    "resumed": "7.1.0"
   },
   "name": "src",
   "workspaces": [
