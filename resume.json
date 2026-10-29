@@ -177,6 +177,7 @@
     },
     {
       "name": "Kubernetes Engine (GKE) Multi-Cluster Lifecycle Management (series)",
+      "summary": "Multipart series describing best-practices for managing the lifecycle of Kubernetes clusters",
       "publisher": "Google Cloud Blog",
       "releaseDate": "2020-04-21",
       "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"

@@ -348,26 +348,26 @@
                                         {{releaseDate}}
                                     </div>
                                 {{/if}}
+                                </div>
+                                <div class="description col-xs-8">
+                                {{#if summary}}
+                                    <span class="summary">
+                                        {{summary}}
+                                    </span>
+                                {{/if}}
+                                </div>
+                                <div class="description col-xs-4">
                                 {{#if url}}
                                     <div class="website">
-                                        <a href="{{url}}" target="_blank">{{ publisher }}</a>
+                                        <a href="{{url}}" target="_blank">{{publisher}}</a>
                                     </div>
                                 {{else}}
                                     {{#if website}}
                                         <div class="website">
-                                            <a href="{{website}}" target="_blank">{{ publisher }}</a>
+                                            <a href="{{website}}" target="_blank">{{publisher}}</a>
                                         </div>
                                     {{/if}}
                                 {{/if}}
-                                </div>
-                                <div class="infos col-xs-12">
-                                    <div class="description">
-                                    {{#if summary}}
-                                        <div class="summary">
-                                            <p>{{summary}}</p>
-                                        </div>
-                                    {{/if}}
-                                    </div>
                                 </div>
                             </div>
                         </div>
