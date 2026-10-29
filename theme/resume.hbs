@@ -168,14 +168,14 @@
                                     </div>
                                 {{/if}}
                                 </div>
-                                <div class="description col-xs-8">
+                                <div class="description col-xs-9">
                                 {{#if summary}}
                                     <span class="summary">
                                         {{summary}}
                                     </span>
                                 {{/if}}
                                 </div>
-                                <div class="description col-xs-4">
+                                <div class="description col-xs-3">
                                 {{#if url}}
                                     <div class="website">
                                         <a href="{{url}}" target="_blank">{{publisher}}</a>
@@ -250,26 +250,6 @@
                                 </ul>
                             {{/if}}
                             </div>
-                        </div>
-                    {{/each}}
-                </section>
-            {{/if}}
-
-            {{#if resume.references.length}}
-                <section id="references">
-                    <h2>References</h2>
-                    {{#each resume.references}}
-                        <div class="item">
-                        {{#if reference}}
-                            <blockquote class="reference">
-                                {{reference}}
-                            </blockquote>
-                        {{/if}}
-                        {{#if name}}
-                            <div class="name">
-                                • {{name}}
-                            </div>
-                        {{/if}}
                         </div>
                     {{/each}}
                 </section>

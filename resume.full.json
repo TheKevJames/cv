@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Kevin James",
-    "label": "Staff Software Engineer, Tech Lead",
+    "label": "Staff Software Engineer, Lead Architect",
     "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
     "email": "KevinJames@thekev.in",
     "phone": "(650) 686-9458",
@@ -33,11 +33,15 @@
   "work": [
     {
       "name": "Dialpad",
-      "position": "Staff Software Engineer, Tech Lead (AI)",
+      "position": "Staff Software Architect, Tech Lead (AI)",
       "url": "https://dialpad.com",
       "startDate": "2020-05-01",
       "endDate": "2026-10-21",
-      "highlights": [],
+      "highlights": [
+        "Managed initiatives affecting several departments and hundreds of engineers and scientists, including large-scale architectural migrations affecting shared infrastructure, company-wide policies, and system design",
+        "Grew team from two engineers into department of four subteams of 6+ engineers each, having mentored each individual from new hire to leader or senior developer, and built team culture focused on knowledge sharing, regular retrospectives, and fireside presentations",
+        "Implemented many major system reliabilility and functional improvements and cost-saving migrations, including handling roadmap integration, stakeholder management, and cross-department collaboration"
+      ],
       "location": "San Francisco, CA; Remote"
     },
     {
@@ -55,7 +59,11 @@
       "url": "https://talkiq.com",
       "startDate": "2018-01-01",
       "endDate": "2018-05-16",
-      "highlights": [],
+      "highlights": [
+        "Successfully open-sourced projects with a combined >800 million downloads",
+        "Advocated for and implemented self-healing and autoscaling infrastructure with CI/CD, automated linting/testing/profiling, and Terraform IaC",
+        "Managed engineering due-diligence and systems integration leading to successful company exit (acquired by Dialpad)"
+      ],
       "location": "San Francisco, CA"
     },
     {
@@ -74,8 +82,8 @@
       "startDate": "2016-08-22",
       "endDate": "2016-12-16",
       "highlights": [
-        "Integrated logging and monitoring systems across disparate systems",
-        "Overhauled pipelined services for migration to new cloud provider"
+        "Overhauled all pipelined services for migration from AWS to Google Cloud",
+        "Rolled out observability integration including logging, metrics, traces, and profiles across all company systems"
       ],
       "location": "San Francisco, CA"
     },
@@ -86,10 +94,9 @@
       "startDate": "2016-01-04",
       "endDate": "2016-04-29",
       "highlights": [
-        "Released file-share SDK and unidirectional drop box app",
-        "Implemented full file search across AeroFS product suite",
-        "Optimized system build and packaging process for continuous delivery and failure recovery",
-        "Integrated user notifications with OSX notification center"
+        "Built and released multiple SDKs and apps for filesharing and unidirectional transfer",
+        "Implemented full natural language file search across the entire product suite",
+        "Optimized system build and packaging procedure for continuous delivery and failure recovery across OSX, Windows, iOS, and Android, including system-specific feature delivery"
       ],
       "location": "Palo Alto, CA"
     },
@@ -100,11 +107,10 @@
       "startDate": "2015-04-27",
       "endDate": "2015-08-28",
       "highlights": [
-        "Worked to improve Word Error Rate of speech transcription systems",
-        "Developed core customer insight visualizations and dashboards",
-        "Refined database queries and performed overhauls to significantly improve overall throughput",
-        "Researched automated question-detection and objection tracking",
-        "Streamlined development practices for continuous integration"
+        "Improved Word Error Rate of speech transcription systems by >10% absolute",
+        "Developed core customer insight reporting and analytics systems",
+        "Performed regular database analysis and query overhauls to significantly improve overall throughput",
+        "Researched and developed automated question-detection and objection tracking functionality"
       ],
       "location": "San Francisco, CA"
     },
@@ -115,8 +121,8 @@
       "startDate": "2014-08-01",
       "endDate": "2014-12-19",
       "highlights": [
-        "Implemented an automated machine learning system for spam detection",
-        "Optimized system to handle millions of concurrent users"
+        "Implemented automated ML systems for spam detection at scale",
+        "Optimized message recognition systems to handle millions of concurrent users"
       ],
       "location": "Waterloo, ON"
     },
@@ -127,9 +133,8 @@
       "startDate": "2014-01-06",
       "endDate": "2014-05-02",
       "highlights": [
-        "Created a natural language processing system which provided insights to help writers expand their work",
-        "Designed a machine learning system capable of learning to rank, regression analysis, and unbounded classification",
-        "Developed algorithms to sort, categorize, and rank the quality of related content and our own insights"
+        "Created NLP insight generation systems for helping writers expand and improve their work",
+        "Designed and developed self-learning ML systems for ranking, regression analysis, and unbound classification"
       ],
       "location": "Waterloo, ON"
     },
@@ -140,8 +145,8 @@
       "startDate": "2013-03-29",
       "endDate": "2013-08-30",
       "highlights": [
-        "Wrote a streaming JSON-parser which transforms highly nested JSON files into a standard relational database format",
-        "Automated a notoriously difficult installation process"
+        "Wrote streaming JSON parser for converting highly nested input into standard RDB format",
+        "Automated notoriously difficult customer installation processes"
       ],
       "location": "Cambridge, MA"
     },
@@ -380,7 +385,7 @@
     },
     {
       "name": "Kubernetes Engine (GKE) Multi-Cluster Lifecycle Management (series)",
-      "summary": "Multipart series describing best-practices for managing the lifecycle of Kubernetes clusters",
+      "summary": "Collaboration with GKE Architects to describe best-practice Kubernetes lifecycle management",
       "publisher": "Google Cloud Blog",
       "releaseDate": "2020-04-21",
       "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"
