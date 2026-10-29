@@ -26,6 +26,7 @@
       "position": "Staff Software Engineer, Tech Lead (AI)",
       "url": "https://dialpad.com",
       "startDate": "2020-05-01",
+      "endDate": "2026-10-21",
       "highlights": [],
       "location": "San Francisco, CA; Remote"
     },
@@ -212,24 +213,6 @@
       "publisher": "Google Cloud",
       "releaseDate": "2020-04-21",
       "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    },
-    {
-      "language": "French",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "Spanish",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "Portuguese (European)",
-      "fluency": "Beginner"
     }
   ],
   "meta": {
