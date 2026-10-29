@@ -148,40 +148,45 @@
   ],
   "publications": [
     {
-      "name": "Patent US11410658B1 for automated pipeline for ASR speech modeling",
+      "name": "Automated Pipeline for ASR speech modeling",
+      "summary": "Patent US11410658B1",
       "publisher": "US Patent Office",
       "releaseDate": "2022-08-09",
       "url": "https://patents.google.com/patent/US11410658B1"
     },
     {
-      "name": "Patent US11226844B1 for universally proactive compute resource scaling",
+      "name": "Universally Proactive Compute Resource Scaling",
+      "summary": "Patent US11226844B1",
       "publisher": "US Patent Office",
       "releaseDate": "2022-01-18",
       "url": "https://patents.google.com/patent/US11226844B1"
     },
     {
-      "name": "Patent US11169798B1 for automated AI model development",
+      "name": "Automated AI Model Development",
+      "summary": "Patent US11169798B1",
       "publisher": "US Patent Office",
       "releaseDate": "2021-11-09",
       "url": "https://patents.google.com/patent/US11169798B1"
     },
     {
-      "name": "Patent US11050807B1 for integrated AI and VoIP platforms",
+      "name": "Integrated AI and VoIP Platforms",
+      "summary": "Patent US11050807B1",
       "publisher": "US Patent Office",
       "releaseDate": "2021-06-29",
       "url": "https://patents.google.com/patent/US11050807B1"
     },
     {
-      "name": "How Dialpad Moved Its Python AI Development from Pip to Poetry",
-      "publisher": "TheNewStack, syndicated: DevOpsChat, Python Weekly",
-      "releaseDate": "2021-10-06",
-      "url": "https://thenewstack.io/how-dialpad-migrated-its-ai-development-from-pip-to-poetry/"
-    },
-    {
-      "name": "Kubernetes Engine (GKE) multi-cluster life cycle management series",
-      "publisher": "Google Cloud",
+      "name": "Kubernetes Engine (GKE) Multi-Cluster Lifecycle Management (series)",
+      "publisher": "Google Cloud Blog",
       "releaseDate": "2020-04-21",
       "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"
+    },
+    {
+      "name": "How Dialpad Moved Python AI Development from Pip to Poetry",
+      "publisher": "TheNewStack",
+      "summary": "Syndicated to DevOpsChat, Python Weekly",
+      "releaseDate": "2021-10-06",
+      "url": "https://thenewstack.io/how-dialpad-migrated-its-ai-development-from-pip-to-poetry/"
     }
   ],
   "meta": {

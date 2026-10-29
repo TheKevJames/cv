@@ -334,31 +334,42 @@
                     <h2>Publications</h2>
                     {{#each resume.publications}}
                         <div class="item">
-                        {{#if name}}
-                            <div class="name">
-                                {{name}}
+                            <div class="row">
+                                <div class="description col-xs-8">
+                                {{#if name}}
+                                    <span class="name">
+                                        {{name}}
+                                    </span>
+                                {{/if}}
+                                </div>
+                                <div class="description col-xs-4">
+                                {{#if releaseDate}}
+                                    <div class="date">
+                                        {{releaseDate}}
+                                    </div>
+                                {{/if}}
+                                {{#if url}}
+                                    <div class="website">
+                                        <a href="{{url}}" target="_blank">{{ publisher }}</a>
+                                    </div>
+                                {{else}}
+                                    {{#if website}}
+                                        <div class="website">
+                                            <a href="{{website}}" target="_blank">{{ publisher }}</a>
+                                        </div>
+                                    {{/if}}
+                                {{/if}}
+                                </div>
+                                <div class="infos col-xs-12">
+                                    <div class="description">
+                                    {{#if summary}}
+                                        <div class="summary">
+                                            <p>{{summary}}</p>
+                                        </div>
+                                    {{/if}}
+                                    </div>
+                                </div>
                             </div>
-                        {{/if}}
-                        {{#if publisher}}
-                            <div class="publisher">
-                                {{publisher}}
-                            </div>
-                        {{/if}}
-                        {{#if releaseDate}}
-                            <div class="releaseDate">
-                                {{releaseDate}}
-                            </div>
-                        {{/if}}
-                        {{#if website}}
-                            <div class="website">
-                                <a href="{{website}}">Link</a>
-                            </div>
-                        {{/if}}
-                        {{#if summary}}
-                            <div class="summary">
-                                <p>{{summary}}</p>
-                            </div>
-                        {{/if}}
                         </div>
                     {{/each}}
                 </section>
