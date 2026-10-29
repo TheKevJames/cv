@@ -82,7 +82,7 @@ section {
 }
 
 .header {
-    background-color: #f0f4f8;
+    background-color: #e2e8f0;
     color: #000;
     text-align: center;
     padding: 20px 0;
@@ -105,8 +105,11 @@ section {
     font-family: 'Montserrat',sans-serif;
 }
 
-.content, .summary {
-    margin: 20px 20px
+.content {
+    margin: 0 20px;
+}
+.summary {
+    margin: 20px 30px;
 }
 
 .position, .name, .institution, .title {
