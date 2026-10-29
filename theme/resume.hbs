@@ -6,7 +6,10 @@
 
     <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
 
     <style>
@@ -37,7 +40,7 @@
             {{/if}}
             {{#if phone}}
                 <span class="phone">
-                    — {{phone}}
+                    • {{phone}}
                 </span>
             {{/if}}
             </div>
@@ -50,7 +53,7 @@
                     <a href="{{url}}" target="_blank">{{network}} ({{username}})</a>
                 </span>
                 {{#unless @last}}
-                    <span class="separator">—</span>
+                    <span class="separator">•</span>
                 {{/unless}}
             {{/each}}
             </div>
@@ -109,9 +112,9 @@
                                     {{/if}}
                                         <span class="endDate">
                                         {{#if endDate}}
-                                            — {{endDate}}
+                                            • {{endDate}}
                                         {{else}}
-                                            — Now
+                                            • Now
                                         {{/if}}
                                         </span>
                                     </div>
@@ -213,9 +216,9 @@
                                     {{/if}}
                                         <span class="endDate">
                                         {{#if endDate}}
-                                            — {{endDate}}
+                                            • {{endDate}}
                                         {{else}}
-                                            — Now
+                                            • Now
                                         {{/if}}
                                         </span>
                                     </div>
@@ -264,7 +267,7 @@
                         {{/if}}
                         {{#if name}}
                             <div class="name">
-                                — {{name}}
+                                • {{name}}
                             </div>
                         {{/if}}
                         </div>

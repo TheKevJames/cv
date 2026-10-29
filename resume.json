@@ -25,25 +25,16 @@
       "name": "Dialpad",
       "position": "Staff Software Engineer, Tech Lead (AI)",
       "url": "https://dialpad.com",
-      "startDate": "2020-05-01",
+      "startDate": "2018-05-16",
       "endDate": "2026-10-21",
       "highlights": [],
       "location": "San Francisco, CA; Remote"
     },
     {
-      "name": "Dialpad",
-      "position": "Software Engineer, Tech Lead (AI)",
-      "url": "https://dialpad.com",
-      "startDate": "2018-05-16",
-      "endDate": "2020-04-30",
-      "highlights": [],
-      "location": "San Francisco, CA"
-    },
-    {
       "name": "TalkIQ",
-      "position": "Server Engineer, Tech Lead",
+      "position": "Senior Server Engineer, Tech Lead",
       "url": "https://talkiq.com",
-      "startDate": "2018-01-01",
+      "startDate": "2017-08-01",
       "endDate": "2018-05-16",
       "highlights": [],
       "location": "San Francisco, CA"
@@ -51,15 +42,6 @@
     {
       "name": "TalkIQ",
       "position": "Infrastructure Engineer",
-      "url": "https://talkiq.com",
-      "startDate": "2017-08-01",
-      "endDate": "2017-12-31",
-      "highlights": [],
-      "location": "San Francisco, CA"
-    },
-    {
-      "name": "TalkIQ",
-      "position": "Infrastructure Engineer (Intern)",
       "url": "https://talkiq.com",
       "startDate": "2016-08-22",
       "endDate": "2016-12-16",
