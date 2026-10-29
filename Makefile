@@ -1,4 +1,4 @@
-RESUMED := node_modules/resumed/bin/resumed.js
+RESUMED := bun x resumed
 OBJS := build/cv.html build/cv.pdf
 
 .PHONY: $(OBJS)

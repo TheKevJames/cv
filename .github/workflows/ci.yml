@@ -26,17 +26,13 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7.0.1
-      - uses: actions/setup-node@v7.1.0
-        with:
-          cache: npm
-          # renovate: datasource=docker depName=node
-          node-version: 26.13.0
-      # npm's cache doesn't cover the browser puppeteer downloads on install.
+      - uses: oven-sh/setup-bun@v2
+      # bun's cache doesn't cover the browser puppeteer downloads on install.
       - uses: actions/cache@v6.1.0
         with:
           path: ~/.cache/puppeteer
-          key: puppeteer-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-      - run: npm ci
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('bun.lockb') }}
+      - run: bun install --frozen-lockfile
       - run: make test
       # Chrome's sandbox needs unprivileged user namespaces, which Ubuntu
       # 23.10+ restricts via AppArmor.
