@@ -237,6 +237,17 @@
                                     </div>
                                 {{/if}}
                                 </div>
+                                <div class="infos col-xs-12">
+                                    <div class="description">
+                                    {{#if highlights.length}}
+                                        <ul class="highlights">
+                                        {{#each highlights}}
+                                            <li>{{.}}</li>
+                                        {{/each}}
+                                        </ul>
+                                    {{/if}}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     {{/each}}
