@@ -50,7 +50,7 @@
             <div class="profile-details">
             {{#each profiles}}
                 <span class="profile">
-                    <a href="{{url}}" target="_blank">{{network}} ({{username}})</a>
+                    <a href="{{url}}" target="_blank">{{urlRender}}</a>
                 </span>
                 {{#unless @last}}
                     <span class="separator">•</span>
@@ -79,6 +79,28 @@
 
         <div class="row content">
             <div class="col-xs-12">
+
+            {{#if resume.skills.length}}
+                <section id="skills">
+                    <h2>Skills</h2>
+                    {{#each resume.skills}}
+                        <div class="item">
+                        {{#if name}}
+                            <span class="name">
+                                {{name}}{{#if keywords.length}}<span style="font-weight: normal">:</span>{{/if}}
+                            </span>
+                        {{/if}}
+                        {{#if keywords.length}}
+                            <span class="keywords">
+                            {{#each keywords}}
+                                <span>{{.}}</span>
+                            {{/each}}
+                            </span>
+                        {{/if}}
+                        </div>
+                    {{/each}}
+                </section>
+            {{/if}}
 
             {{#if resume.work.length}}
                 <section id="work">
@@ -120,7 +142,7 @@
                                     </div>
                                 {{#if url}}
                                     <div class="website">
-                                        <a href="{{url}}" target="_blank">{{url}}</a>
+                                        <a href="{{url}}" target="_blank">{{urlRender}}</a>
                                     </div>
                                 {{/if}}
                                 </div>
@@ -136,7 +158,7 @@
                                     {{#if highlights.length}}
                                         <ul class="highlights">
                                         {{#each highlights}}
-                                            <li>{{.}}</li>
+                                            <li>{{{.}}}</li>
                                         {{/each}}
                                         </ul>
                                     {{/if}}
@@ -148,9 +170,55 @@
                 </section>
             {{/if}}
 
+            {{#if resume.certificates.length}}
+                <section id="certificates">
+                    <h2>Patents</h2>
+                    {{#each resume.certificates}}
+                        <div class="item">
+                            <div class="row">
+                                <div class="description col-xs-8">
+                                {{#if name}}
+                                    <span class="name">
+                                        {{name}}
+                                    </span>
+                                {{/if}}
+                                </div>
+                                <div class="description col-xs-4">
+                                {{#if date}}
+                                    <div class="date">
+                                        {{date}}
+                                    </div>
+                                {{/if}}
+                                </div>
+                                <div class="description col-xs-9">
+                                {{#if summary}}
+                                    <span class="summary">
+                                        {{summary}}
+                                    </span>
+                                {{/if}}
+                                </div>
+                                <div class="description col-xs-3">
+                                {{#if url}}
+                                    <div class="website">
+                                        <a href="{{url}}" target="_blank">{{issuer}}</a>
+                                    </div>
+                                {{else}}
+                                    {{#if website}}
+                                        <div class="website">
+                                            <a href="{{website}}" target="_blank">{{publisher}}</a>
+                                        </div>
+                                    {{/if}}
+                                {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </section>
+            {{/if}}
+
             {{#if resume.publications.length}}
                 <section id="publications">
-                    <h2>Selected Publications and Patents</h2>
+                    <h2>Selected Writing</h2>
                     {{#each resume.publications}}
                         <div class="item">
                             <div class="row">
@@ -233,7 +301,7 @@
                                 <div class="description col-xs-5">
                                 {{#if url}}
                                     <div class="website">
-                                        <a href="{{url}}" target="_blank">{{url}}</a>
+                                        <a href="{{url}}" target="_blank">{{urlRender}}</a>
                                     </div>
                                 {{/if}}
                                 </div>

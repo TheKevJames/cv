@@ -30,11 +30,11 @@ function formatUrl(url) {
 
 function formatUrls(urls) {
     if (urls.url) {
-        urls.url = formatUrl(urls.url);
+        urls.urlRender = formatUrl(urls.url);
     }
 
     if (urls.website) {
-        urls.website = formatUrl(urls.website);
+        urls.websiteRender = formatUrl(urls.website);
     }
 }
 
@@ -49,6 +49,9 @@ function render(resume) {
     });
 
     var sectionsWithUrls = ['work', 'volunteer', 'education', 'awards', 'certificates', 'publications', 'projects'];
+    if (resume['basics'] && resume['basics']['profiles']) {
+        resume['basics']['profiles'].map(formatUrls);
+    }
     sectionsWithUrls.forEach((section) => {
         if (!resume[section]) { return; }
         resume[section].map(formatUrls);

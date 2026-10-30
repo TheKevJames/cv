@@ -1,12 +1,15 @@
+/*
+ * As needed, to avoid weird page breaks
+#projects {
+    break-before: page;
+}
+*/
+
 @font-face {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-#projects {
-    break-before: page;
 }
 
 body {

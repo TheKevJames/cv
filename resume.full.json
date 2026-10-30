@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Kevin James",
-    "label": "Staff Software Engineer, Lead Architect",
+    "label": "Staff Software Engineer | Lead Architect | Remote (CA/PT)",
     "image": "https://secure.gravatar.com/avatar/ba8ec5ac9fe95bb410bda4416aba08c8?size=400&dummy=.png",
     "email": "KevinJames@thekev.in",
     "phone": "(650) 686-9458",
     "website": "https://thekev.in",
-    "summary": "Staff Engineer and Architect with 14+ years designing realtime, distributed systems for AI. Led multiple teams and acted as system architect responsible for all Voice AI systems handling 10B+ minutes per day peaking at 100M+ concurrent calls. Flagship work in building ASR and NLP systems and infrastructure on-par with Google for quality and performance at 1/100th of the cost. Multiple patents for AI architecture and infrastructure scaling and self-healing.",
+    "summary": "Staff Engineer and Architect with 14+ years designing realtime, distributed systems for AI. Led multiple teams and acted as system architect responsible for all Voice AI systems handling 10B+ minutes per day peaking at 100M+ concurrent calls. Flagship work in building ASR and NLP systems and infrastructure on-par with Google for quality and performance at 1/100th of the inference cost. Multiple patents for AI architecture and infrastructure scaling and self-healing.",
     "profiles": [
       {
         "network": "Github",
@@ -31,6 +31,20 @@
       }
     ]
   },
+  "skills": [
+    {
+      "name": "Infrastructure",
+      "keywords": ["GCP", "AWS", "Kubernetes (GKE)", "Terraform", "Docker", "Pub/Sub"]
+    },
+    {
+      "name": "Domains",
+      "keywords": ["Distributed Systems", "Realtime Voice AI", "ASR/NLP Platforms", "Event-Driven Architecture", "Observability", "Autoscaling & Self-Healing"]
+    },
+    {
+      "name": "Practices",
+      "keywords": ["System Design & Architecture", "Technical Leadership", "Cross-Team Roadmap Ownership", "CI/CD", "Incident Response"]
+    }
+  ],
   "work": [
     {
       "name": "Dialpad",
@@ -39,9 +53,12 @@
       "startDate": "2020-05-01",
       "endDate": "2026-10-21",
       "highlights": [
-        "Managed initiatives affecting several departments and hundreds of engineers and scientists, including large-scale architectural migrations affecting shared infrastructure, company-wide policies, and system design",
-        "Grew team from two engineers into department of four subteams of 6+ engineers each, having mentored each individual from new hire to leader or senior developer, and built team culture focused on knowledge sharing, regular retrospectives, and fireside presentations",
-        "Implemented many major system reliabilility and functional improvements and cost-saving migrations, including handling roadmap integration, stakeholder management, and cross-department collaboration"
+        "Redesigned the realtime voice pipeline for self-healing and autoscaling, raising availability from <b>98% to 99.995%</b> and cutting outage recovery from <b>~6 hours to 12 minutes</b> across 100M+ concurrent calls.",
+        "Architected and led the Voice AI platform serving <b>10B+ minutes/day at peaks of 100M+ concurrent calls</b>, owning system design across ASR, NLP, and realtime telephony infrastructure.",
+        "Delivered ASR and NLP systems matching Google's quality and performance at <b>~1/100th of the inference cost</b>, via custom infrastructure and compute optimization.",
+        "Grew the Voice AI organization from a 2-engineer team into 4 sub-teams of 6+ engineers each, personally mentoring the majority of the org - driving <b>9 internal promotions</b> and <b>95%+ retention</b> - and established a culture of retrospectives, fireside deep-dives, and cross-team knowledge sharing.",
+        "Led dozens of high-impact architectural migrations across hundreds of engineers and scientists - including AWS→GCP, Python 2→3, pip→Poetry, task queues/Redis Streams→Pub/Sub, and Pusher→Ably - reducing combined infrastructure spend by <b>>90%</b> while maintaining <b>99.99% availability</b> throughout.",
+        "Owned technical roadmap integration across <b>8 product and platform teams</b>, achieving <b>95% on-time delivery</b> on major initiatives while driving cross-department stakeholder alignment and company-wide system design standards."
       ],
       "location": "San Francisco, CA; Remote"
     },
@@ -61,9 +78,9 @@
       "startDate": "2018-01-01",
       "endDate": "2018-05-16",
       "highlights": [
-        "Successfully open-sourced projects with a combined >800 million downloads",
-        "Advocated for and implemented self-healing and autoscaling infrastructure with CI/CD, automated linting/testing/profiling, and Terraform IaC",
-        "Managed engineering due-diligence and systems integration leading to successful company exit (acquired by Dialpad)"
+        "Open-sourced projects with a combined <b>800 million downloads</b> (gcloud-aio, yaaredis)",
+        "Managed engineering due-diligence and systems integration leading to successful company exit (acquired by Dialpad)",
+        "Advocated for and implemented self-healing and autoscaling infrastructure with CI/CD, automated linting/testing/profiling, and Terraform IaC"
       ],
       "location": "San Francisco, CA"
     },
@@ -73,7 +90,10 @@
       "url": "https://talkiq.com",
       "startDate": "2017-08-01",
       "endDate": "2017-12-31",
-      "highlights": [],
+      "highlights": [
+        "Overhauled all pipelined services for migration from <b>AWS to Google Cloud</b>",
+        "Rolled out observability - logging, metrics, traces, and profiles - across all company systems"
+      ],
       "location": "San Francisco, CA"
     },
     {
@@ -82,10 +102,7 @@
       "url": "https://talkiq.com",
       "startDate": "2016-08-22",
       "endDate": "2016-12-16",
-      "highlights": [
-        "Overhauled all pipelined services for migration from AWS to Google Cloud",
-        "Rolled out observability integration including logging, metrics, traces, and profiles across all company systems"
-      ],
+      "highlights": [],
       "location": "San Francisco, CA"
     },
     {
@@ -340,6 +357,34 @@
   ],
   "certificates": [
     {
+      "name": "Automated Pipeline for ASR speech modeling",
+      "summary": "US Patent #11,410,658 B1",
+      "issuer": "US Patent Office",
+      "date": "2022-08-09",
+      "url": "https://patents.google.com/patent/US11410658B1"
+    },
+    {
+      "name": "Universally Proactive Compute Resource Scaling",
+      "summary": "US Patent #11,226,844 B1",
+      "issuer": "US Patent Office",
+      "date": "2022-01-18",
+      "url": "https://patents.google.com/patent/US11226844B1"
+    },
+    {
+      "name": "Automated AI Model Development",
+      "summary": "US Patent #11,169,798 B1",
+      "issuer": "US Patent Office",
+      "date": "2021-11-09",
+      "url": "https://patents.google.com/patent/US11169798B1"
+    },
+    {
+      "name": "Integrated AI and VoIP Platforms",
+      "summary": "US Patent #11,050,807 B1",
+      "issuer": "US Patent Office",
+      "date": "2021-06-29",
+      "url": "https://patents.google.com/patent/US11050807B1"
+    },
+    {
       "title": "Apple Product Professional",
       "date": "2012-03-01",
       "awarder": "Apple"
@@ -356,34 +401,6 @@
     }
   ],
   "publications": [
-    {
-      "name": "Automated Pipeline for ASR speech modeling",
-      "summary": "US Patent #11410658B1",
-      "publisher": "US Patent Office",
-      "releaseDate": "2022-08-09",
-      "url": "https://patents.google.com/patent/US11410658B1"
-    },
-    {
-      "name": "Universally Proactive Compute Resource Scaling",
-      "summary": "US Patent #11226844B1",
-      "publisher": "US Patent Office",
-      "releaseDate": "2022-01-18",
-      "url": "https://patents.google.com/patent/US11226844B1"
-    },
-    {
-      "name": "Automated AI Model Development",
-      "summary": "US Patent #11169798B1",
-      "publisher": "US Patent Office",
-      "releaseDate": "2021-11-09",
-      "url": "https://patents.google.com/patent/US11169798B1"
-    },
-    {
-      "name": "Integrated AI and VoIP Platforms",
-      "summary": "US Patent #11050807B1",
-      "publisher": "US Patent Office",
-      "releaseDate": "2021-06-29",
-      "url": "https://patents.google.com/patent/US11050807B1"
-    },
     {
       "name": "Kubernetes Engine (GKE) Multi-Cluster Lifecycle Management (series)",
       "summary": "Collaboration with GKE Architects to describe best-practice Kubernetes lifecycle management",
@@ -404,7 +421,7 @@
       "name": "gcloud-aio-* and gcloud-rest-*",
       "url": "https://github.com/talkiq/gcloud-aio",
       "summary": "Python packages for interacting with Google APIs over public APIs",
-      "highlights": [">750M unique downloads total, >10M downloads per day"],
+      "highlights": [">750M unique downloads, >10M downloads per day"],
       "roles": ["primary maintainer"],
       "startDate": "2017-10"
     },
