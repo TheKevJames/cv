@@ -27,6 +27,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: oven-sh/setup-bun@v2.2.0
+      - uses: astral-sh/setup-uv@v10.3.3
+        with:
+          enable-cache: false
+          # renovate: datasource=github-releases depName=astral-sh/uv
+          version: 0.13.6
+          # renovate: datasource=docker depName=python
+          python-version: 3.15.2
       # bun's cache doesn't cover the browser puppeteer downloads on install.
       - uses: actions/cache@v6.1.0
         with:
@@ -37,7 +44,7 @@ jobs:
       # Chrome's sandbox needs unprivileged user namespaces, which Ubuntu
       # 23.10+ restricts via AppArmor.
       - run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
-      - run: make build/cv.html build/cv.pdf
+      - run: make build
       - uses: actions/upload-artifact@v7.0.2
         with:
           name: cv
