@@ -7,7 +7,7 @@
     "email": "KevinJames@thekev.in",
     "phone": "(650) 686-9458",
     "website": "https://thekev.in",
-    "summary": "Staff Engineer and Architect with 14+ years designing realtime, distributed systems for AI. Led multiple teams and acted as system architect responsible for all Voice AI systems handling 10B+ minutes per day peaking at 100M+ concurrent calls. Flagship work in building ASR and NLP systems and infrastructure on-par with Google for quality and performance at 1/100th of the inference cost. Multiple patents for AI architecture and infrastructure scaling and self-healing.",
+    "summary": "Staff Engineer and Architect with 14+ years designing realtime, distributed systems for AI. Led multiple teams and acted as system architect responsible for all Voice AI systems handling <b>10B+ minutes per day</b> peaking at <b>100M+ concurrent calls</b>. Flagship work in building ASR and NLP systems and infrastructure on-par with Google for quality and performance at <b>~1/100th of the inference cost</b>. Four patents in AI architecture, infrastructure autoscaling, and self-healing.",
     "profiles": [
       {
         "network": "Github",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Domains",
-      "keywords": ["Distributed Systems", "Realtime Voice AI", "ASR/NLP Platforms", "Event-Driven Architecture", "Observability", "Autoscaling & Self-Healing"]
+      "keywords": ["Realtime Voice AI", "ASR/NLP Platforms", "Event-Driven Architecture", "Observability", "Autoscaling & Self-Healing"]
     },
     {
       "name": "Practices",
@@ -54,7 +54,7 @@
       "endDate": "2026-10-21",
       "highlights": [
         "Redesigned the realtime voice pipeline for self-healing and autoscaling, raising availability from <b>98% to 99.995%</b> and cutting outage recovery from <b>~6 hours to 12 minutes</b> across 100M+ concurrent calls.",
-        "Architected and led the Voice AI platform serving <b>10B+ minutes/day at peaks of 100M+ concurrent calls</b>, owning system design across ASR, NLP, and realtime telephony infrastructure.",
+        "Architected and led the Voice AI platform serving <b>10B+ minutes/day</b> at peaks of <b>100M+ concurrent calls</b>, owning system design across ASR, NLP, and realtime telephony infrastructure.",
         "Delivered ASR and NLP systems matching Google's quality and performance at <b>~1/100th of the inference cost</b>, via custom infrastructure and compute optimization.",
         "Grew the Voice AI organization from a 2-engineer team into 4 sub-teams of 6+ engineers each, personally mentoring the majority of the org - driving <b>9 internal promotions</b> and <b>95%+ retention</b> - and established a culture of retrospectives, fireside deep-dives, and cross-team knowledge sharing.",
         "Led dozens of high-impact architectural migrations across hundreds of engineers and scientists - including AWS→GCP, Python 2→3, pip→Poetry, task queues/Redis Streams→Pub/Sub, and Pusher→Ably - reducing combined infrastructure spend by <b>>90%</b> while maintaining <b>99.99% availability</b> throughout.",
@@ -78,7 +78,7 @@
       "startDate": "2018-01-01",
       "endDate": "2018-05-16",
       "highlights": [
-        "Open-sourced projects with a combined <b>800 million downloads</b> (gcloud-aio, yaaredis)",
+        "Open-sourced projects with a combined <b>>800 million downloads</b>",
         "Managed engineering due-diligence and systems integration leading to successful company exit (acquired by Dialpad)",
         "Advocated for and implemented self-healing and autoscaling infrastructure with CI/CD, automated linting/testing/profiling, and Terraform IaC"
       ],
@@ -402,18 +402,18 @@
   ],
   "publications": [
     {
-      "name": "Kubernetes Engine (GKE) Multi-Cluster Lifecycle Management (series)",
-      "summary": "Collaboration with GKE Architects to describe best-practice Kubernetes lifecycle management",
-      "publisher": "Google Cloud Blog",
-      "releaseDate": "2020-04-21",
-      "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"
-    },
-    {
       "name": "How Dialpad Moved Python AI Development from Pip to Poetry",
       "publisher": "TheNewStack",
       "summary": "Syndicated to DevOpsChat, Python Weekly",
       "releaseDate": "2021-10-06",
       "url": "https://thenewstack.io/how-dialpad-migrated-its-ai-development-from-pip-to-poetry/"
+    },
+    {
+      "name": "Kubernetes Engine (GKE) Multi-Cluster Lifecycle Management (multi-part series)",
+      "summary": "Collaboration with GKE Architects to describe best-practice Kubernetes lifecycle management",
+      "publisher": "Google Cloud Blog",
+      "releaseDate": "2020-04-21",
+      "url": "https://medium.com/google-cloud/kubernetes-engine-gke-multi-cluster-life-cycle-management-series-17ff892b85c8"
     }
   ],
   "projects": [

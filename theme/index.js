@@ -12,6 +12,10 @@ function formatDates(dates) {
         dates.date = formatDate(dates.date);
     }
 
+    if (dates.releaseDate) {
+        dates.releaseDate = formatDate(dates.releaseDate);
+    }
+
     if (dates.startDate) {
         dates.startDate = formatDate(dates.startDate);
     }
@@ -42,7 +46,7 @@ function render(resume) {
     var css = fs.readFileSync(__dirname + '/style.css', 'utf-8');
     var tpl = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
-    var sectionsWithDates = ['work', 'volunteer', 'education', 'awards', 'projects'];
+    var sectionsWithDates = ['work', 'volunteer', 'education', 'awards', 'projects', 'certificates', 'publications'];
     sectionsWithDates.forEach((section) => {
         if (!resume[section]) { return; }
         resume[section].map(formatDates);
