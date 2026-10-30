@@ -399,6 +399,32 @@
       "url": "https://thenewstack.io/how-dialpad-migrated-its-ai-development-from-pip-to-poetry/"
     }
   ],
+  "projects": [
+    {
+      "name": "gcloud-aio-* and gcloud-rest-*",
+      "url": "https://github.com/talkiq/gcloud-aio",
+      "summary": "Python packages for interacting with Google APIs over public APIs",
+      "highlights": [">750M unique downloads total, >10M downloads per day"],
+      "roles": ["primary maintainer"],
+      "startDate": "2017-10"
+    },
+    {
+      "name": "coveralls-python",
+      "url": "https://pypi.org/project/coveralls",
+      "summary": "Python coverage stats publisher for coveralls.io",
+      "highlights": [">75M unique downloads, used by >250k OSS projects"],
+      "roles": ["sole maintainer"],
+      "startDate": "2017-08"
+    },
+    {
+      "name": "puppet-homebrew",
+      "url": "https://forge.puppet.com/modules/thekevjames/homebrew",
+      "summary": "Homebrew provider for Puppet, used by most Puppet-managed macOS systems",
+      "highlights": [">350k unique downloads"],
+      "roles": ["sole maintainer"],
+      "startDate": "2016-02"
+    }
+  ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",

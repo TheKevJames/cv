@@ -21,14 +21,37 @@ function formatDates(dates) {
     }
 }
 
+const removePrefix = (x, prefix) => x.startsWith(prefix) ? x.slice(prefix.length) : x;
+
+function formatUrl(url) {
+    const prefixes = ['http://', 'https://', 'www.'];
+    return prefixes.reduce(removePrefix, url);
+}
+
+function formatUrls(urls) {
+    if (urls.url) {
+        urls.url = formatUrl(urls.url);
+    }
+
+    if (urls.website) {
+        urls.website = formatUrl(urls.website);
+    }
+}
+
 function render(resume) {
     var css = fs.readFileSync(__dirname + '/style.css', 'utf-8');
     var tpl = fs.readFileSync(__dirname + '/resume.hbs', 'utf-8');
 
-    var sectionsWithDates = ['work', 'volunteer', 'education', 'awards'];
+    var sectionsWithDates = ['work', 'volunteer', 'education', 'awards', 'projects'];
     sectionsWithDates.forEach((section) => {
         if (!resume[section]) { return; }
         resume[section].map(formatDates);
+    });
+
+    var sectionsWithUrls = ['work', 'volunteer', 'education', 'awards', 'certificates', 'publications', 'projects'];
+    sectionsWithUrls.forEach((section) => {
+        if (!resume[section]) { return; }
+        resume[section].map(formatUrls);
     });
 
     return Handlebars.compile(tpl)({

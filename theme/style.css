@@ -108,8 +108,8 @@ section {
 .content {
     margin: 0 20px;
 }
-.summary {
-    margin: 20px 30px;
+#basics > .summary {
+     margin: 20px 30px;
 }
 
 .position, .name, .institution, .title {
